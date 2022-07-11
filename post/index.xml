@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 22:22:44 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme preview</title>
       <link>http://localhost:1313/post/even-preview/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://localhost:1313/post/even-preview/</guid>
       <description>Based on MarkdownPreview test.md. Markdown 1 2 3 4 5 6 7 8 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 ### Duplicate Header ### Duplicate Header H1 H2 H3 H4 H5 H6 Duplicate Header Duplicate Header Paragraphs 1 2 3 4 This is a paragraph. I am still part of the paragraph. New paragraph. This is a paragraph. I am still part of the paragraph.</description>
+    </item>
+    
+    <item>
+      <title>基于hugo&#43;github搭建个人博客</title>
+      <link>http://localhost:1313/post/setblog/</link>
+      <pubDate>Mon, 11 Jul 2022 22:22:44 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/setblog/</guid>
+      <description></description>
     </item>
     
     <item>

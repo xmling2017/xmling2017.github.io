@@ -6,14 +6,23 @@
     <description>Recent content in 博客 on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Jul 2022 22:22:44 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jul 2022 14:26:53 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于上篇提到的创建批处理文件一键提交博客</title>
+      <link>http://localhost:1313/post/dos-git-hugo/</link>
+      <pubDate>Tue, 12 Jul 2022 14:26:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/dos-git-hugo/</guid>
+      <description>&lt;p&gt;前文所提到的解决hugo更新文章的操作命令繁琐的问题，笔者提出写一个批处理文件，一键提交更新。文件内容如下&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>基于hugo&#43;github搭建个人博客</title>
       <link>http://localhost:1313/post/setblog/</link>
       <pubDate>Mon, 11 Jul 2022 22:22:44 +0800</pubDate>
       
       <guid>http://localhost:1313/post/setblog/</guid>
-      <description></description>
+      <description>&lt;p&gt;原本想一直用博客园就好，简简单单，不需要过多的折腾。但是因为博客园的编辑窗口实在是太丑，且我还是喜欢文章放在本地就好，只存在网路上实在是不放心。另外就是，像hugo、hexo这类静态博客只需要几个命令就可以发布文章，基于Go语言的hugo部署会更加便捷，因此我就选择了hugo&lt;/p&gt;</description>
     </item>
     
   </channel>

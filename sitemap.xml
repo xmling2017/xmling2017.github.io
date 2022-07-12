@@ -17,62 +17,69 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2022-07-11T22:22:44+08:00</lastmod>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/github/</loc>
-    <lastmod>2022-07-11T22:22:44+08:00</lastmod>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/hugo/</loc>
-    <lastmod>2022-07-11T22:22:44+08:00</lastmod>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2022-07-11T22:22:44+08:00</lastmod>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2022-07-11T22:22:44+08:00</lastmod>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-07-11T22:22:44+08:00</lastmod>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/setblog/</loc>
-    <lastmod>2022-07-11T22:22:44+08:00</lastmod>
+    <loc>http://localhost:1313/post/dos-git-hugo/</loc>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2022-07-11T22:22:44+08:00</lastmod>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/</loc>
+    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/setblog/</loc>
     <lastmod>2022-07-11T22:22:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

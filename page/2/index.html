@@ -126,35 +126,63 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/syntax-highlighting/">Syntax Highlighting</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/shortcodes/">Shortcodes</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2011-08-30 </span>
+      <span class="post-time"> 2016-08-30 </span>
       <div class="post-category">
-          <a href="/categories/syntax-highlighting/"> Syntax Highlighting </a>
+          <a href="/categories/shortcodes/"> shortcodes </a>
           </div>
-        <span class="more-meta"> 约 346 字 </span>
+        <span class="more-meta"> 约 332 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <div class="highlight"><div class="chroma">
+      <h1 id="admonition">Admonition</h1>
+<div class="admonition note"><p class="admonition-title">I&#39;m title!</p>
+<p>biu biu biu.</p>
+<details class="admonition note"><summary class="admonition-title">note</summary>
+  <p>biu biu biu.</p>
+</details>
+<div class="admonition example">
+  <p>Without title.</p>
+</div>
+</div>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">helloWorld</span> <span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{% admonition note &#34;I&#39;m title!&#34; false %}}
+</span></span><span class="line"><span class="cl">biu biu biu.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{% admonition type=&#34;note&#34; title=&#34;note&#34; details=&#34;true&#34; %}}
+</span></span><span class="line"><span class="cl">biu biu biu.
+</span></span><span class="line"><span class="cl">{{% /admonition %}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{% admonition example %}}
+</span></span><span class="line"><span class="cl">Without title.
+</span></span><span class="line"><span class="cl">{{% /admonition %}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{% /admonition %}}
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
     <div class="read-more">
-      <a href="/post/syntax-highlighting/" class="read-more-link">阅读更多</a>
+      <a href="/post/shortcodes/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>

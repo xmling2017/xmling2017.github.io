@@ -10,7 +10,105 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
+    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/powershell/</loc>
+    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/powershell/</loc>
+    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/win10/</loc>
+    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E6%90%AC%E8%BF%90/</loc>
+    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/pic_go/</loc>
+    <lastmod>2022-07-14T17:44:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2022-07-14T17:44:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/latex/</loc>
+    <lastmod>2022-07-14T09:13:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/markdown/</loc>
+    <lastmod>2022-07-14T09:13:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/sublime/</loc>
+    <lastmod>2022-07-14T09:13:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/sublime_done/</loc>
+    <lastmod>2022-07-14T09:13:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2022-07-14T09:13:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -30,20 +128,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,13 +136,6 @@
   
   <url>
     <loc>http://localhost:1313/post/dos-git-hugo/</loc>
-    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -6,7 +6,70 @@
     <description>Recent content in Categories on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jul 2022 14:26:53 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jul 2022 18:41:14 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell</title>
+      <link>http://localhost:1313/categories/powershell/</link>
+      <pubDate>Thu, 14 Jul 2022 18:41:14 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Win10</title>
+      <link>http://localhost:1313/categories/win10/</link>
+      <pubDate>Thu, 14 Jul 2022 18:41:14 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/win10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>图床</title>
+      <link>http://localhost:1313/categories/%E5%9B%BE%E5%BA%8A/</link>
+      <pubDate>Thu, 14 Jul 2022 17:44:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E5%9B%BE%E5%BA%8A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>http://localhost:1313/categories/latex/</link>
+      <pubDate>Thu, 14 Jul 2022 09:13:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>http://localhost:1313/categories/markdown/</link>
+      <pubDate>Thu, 14 Jul 2022 09:13:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sublime</title>
+      <link>http://localhost:1313/categories/sublime/</link>
+      <pubDate>Thu, 14 Jul 2022 09:13:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/sublime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>破解软件</title>
+      <link>http://localhost:1313/categories/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Thu, 14 Jul 2022 09:13:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>github</title>
       <link>http://localhost:1313/categories/github/</link>

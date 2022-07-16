@@ -6,16 +6,41 @@
     <description>Recent content on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jul 2022 14:26:53 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jul 2022 18:41:14 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
       <guid>http://localhost:1313/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
-Cobra Viper J Walter Weatherman Cast Learn more and contribute on GitHub.</description>
+      <description>作者简介 作者笔名：李明勖，出生于江苏泰州，今年24岁。本科毕业于青岛科技大学，目前是在读硕士，就读于东华大学</description>
+    </item>
+    
+    <item>
+      <title>Powershell美化</title>
+      <link>http://localhost:1313/post/powershell/</link>
+      <pubDate>Thu, 14 Jul 2022 18:41:14 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/powershell/</guid>
+      <description>具体操作请观看b站up主老湿基 步骤 先下载最新版PowerShell并安装，下载配制文件1 到Microsoft store安装windows te</description>
+    </item>
+    
+    <item>
+      <title>PicGo&#43;阿里云OSS图床</title>
+      <link>http://localhost:1313/post/pic_go/</link>
+      <pubDate>Thu, 14 Jul 2022 17:44:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/pic_go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sublime的安装以及破解</title>
+      <link>http://localhost:1313/post/sublime_done/</link>
+      <pubDate>Thu, 14 Jul 2022 09:13:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/sublime_done/</guid>
+      <description>&lt;p&gt;因为笔者经常使用Markdown和LaTeX两种排版工具，所需要的编辑软件主要是&lt;strong&gt;sublime&lt;/strong&gt;和&lt;em&gt;VS Code&lt;/em&gt;，因为sublime更加的轻量化，对于短文章的编辑十分方便，而且sublime同样支持插件，只不过安装比较麻烦。官网上下载的sublime仍可当作免费使用，但时不时会跳出购买提示，比较恼人，笔者浏览网站，找到破解购买提示的方法，在此与大家分享，希望各位不要用于商业用途。如果失效，也请告知笔者。&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -10,14 +10,84 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/diy/</loc>
+    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/my-diary-menu/</loc>
+    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
+    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E7%BE%8E%E9%A3%9F/</loc>
+    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/</loc>
+    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/mcgill%E6%B3%95/</loc>
+    <lastmod>2022-07-25T17:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E5%81%A5%E5%BA%B7/</loc>
+    <lastmod>2022-07-25T17:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/back-mechanic/</loc>
+    <lastmod>2022-07-25T17:14:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E8%85%B0%E6%A4%8E%E9%97%B4%E7%9B%98%E7%AA%81%E5%87%BA/</loc>
+    <lastmod>2022-07-25T17:14:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -37,13 +107,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/categories/win10/</loc>
     <lastmod>2022-07-14T18:41:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,13 +115,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/%E6%90%AC%E8%BF%90/</loc>
-    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2022-07-14T18:41:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -136,13 +192,6 @@
   
   <url>
     <loc>http://localhost:1313/post/dos-git-hugo/</loc>
-    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/</loc>
     <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

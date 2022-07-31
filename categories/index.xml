@@ -6,7 +6,52 @@
     <description>Recent content in Categories on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Jul 2022 18:41:14 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jul 2022 06:25:07 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIY</title>
+      <link>http://localhost:1313/categories/diy/</link>
+      <pubDate>Sat, 30 Jul 2022 06:25:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/diy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>美食</title>
+      <link>http://localhost:1313/categories/%E7%BE%8E%E9%A3%9F/</link>
+      <pubDate>Sat, 30 Jul 2022 06:25:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E7%BE%8E%E9%A3%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>McGill法</title>
+      <link>http://localhost:1313/categories/mcgill%E6%B3%95/</link>
+      <pubDate>Mon, 25 Jul 2022 17:14:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/mcgill%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>健康</title>
+      <link>http://localhost:1313/categories/%E5%81%A5%E5%BA%B7/</link>
+      <pubDate>Mon, 25 Jul 2022 17:14:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E5%81%A5%E5%BA%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>腰椎间盘突出</title>
+      <link>http://localhost:1313/categories/%E8%85%B0%E6%A4%8E%E9%97%B4%E7%9B%98%E7%AA%81%E5%87%BA/</link>
+      <pubDate>Mon, 25 Jul 2022 17:14:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E8%85%B0%E6%A4%8E%E9%97%B4%E7%9B%98%E7%AA%81%E5%87%BA/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>PowerShell</title>
       <link>http://localhost:1313/categories/powershell/</link>

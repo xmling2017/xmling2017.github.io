@@ -6,7 +6,25 @@
     <description>Recent content in 原创 on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jul 2022 14:26:53 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jul 2022 06:25:07 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Diary Menu</title>
+      <link>http://localhost:1313/post/my-diary-menu/</link>
+      <pubDate>Sat, 30 Jul 2022 06:25:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/my-diary-menu/</guid>
+      <description>&lt;p&gt;记录日常自己动手做的菜谱，大部分学习自B站的美食作家王刚老师。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>腰背的自我修复</title>
+      <link>http://localhost:1313/post/back-mechanic/</link>
+      <pubDate>Mon, 25 Jul 2022 17:14:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/back-mechanic/</guid>
+      <description>&lt;p&gt;笔者是2年的腰突患者，今年夏天刚刚做完腰突的微创手术。经过朋友的介绍，有幸拜读McGill先生的《 腰背维修师：医生没有告诉你的脊柱保健秘诀》，这本书给出了无痛完成各种动作的指导要领，包括坐、走、举、开车、睡眠等日常活动，结合平时在网页上浏览的其他治疗腰突的信息，整理成文章与大家分享&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>关于上篇提到的创建批处理文件一键提交博客</title>
       <link>http://localhost:1313/post/dos-git-hugo/</link>

@@ -6,7 +6,16 @@
     <description>Recent content in Categories on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Jul 2022 06:25:07 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Aug 2022 09:36:23 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>科研</title>
+      <link>http://localhost:1313/categories/%E7%A7%91%E7%A0%94/</link>
+      <pubDate>Wed, 10 Aug 2022 09:36:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E7%A7%91%E7%A0%94/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>DIY</title>
       <link>http://localhost:1313/categories/diy/</link>
@@ -53,20 +62,20 @@
     </item>
     
     <item>
-      <title>PowerShell</title>
-      <link>http://localhost:1313/categories/powershell/</link>
+      <title>美化</title>
+      <link>http://localhost:1313/categories/%E7%BE%8E%E5%8C%96/</link>
       <pubDate>Thu, 14 Jul 2022 18:41:14 +0800</pubDate>
       
-      <guid>http://localhost:1313/categories/powershell/</guid>
+      <guid>http://localhost:1313/categories/%E7%BE%8E%E5%8C%96/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Win10</title>
-      <link>http://localhost:1313/categories/win10/</link>
+      <title>终端</title>
+      <link>http://localhost:1313/categories/%E7%BB%88%E7%AB%AF/</link>
       <pubDate>Thu, 14 Jul 2022 18:41:14 +0800</pubDate>
       
-      <guid>http://localhost:1313/categories/win10/</guid>
+      <guid>http://localhost:1313/categories/%E7%BB%88%E7%AB%AF/</guid>
       <description></description>
     </item>
     
@@ -139,24 +148,6 @@
       <pubDate>Tue, 12 Jul 2022 14:26:53 +0800</pubDate>
       
       <guid>http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>category-2</title>
-      <link>http://localhost:1313/categories/category-2/</link>
-      <pubDate>Tue, 10 Jul 2018 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/categories/category-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>category-3</title>
-      <link>http://localhost:1313/categories/category-3/</link>
-      <pubDate>Tue, 10 Jul 2018 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/categories/category-3/</guid>
       <description></description>
     </item>
     

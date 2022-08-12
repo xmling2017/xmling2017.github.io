@@ -6,14 +6,32 @@
     <description>Recent content on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Jul 2022 06:25:07 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Aug 2022 13:59:39 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
       <guid>http://localhost:1313/about/</guid>
-      <description>作者简介 作者笔名：李明勖，江苏泰州人士。本科毕业于青岛科技大学，目前是在读硕士，就读于东华大学 爱好：读书——偏武侠，科幻小说，喜欢的作家是刘</description>
+      <description>作者简介 作者笔名：李明勖，江苏泰州人士。本科毕业于青岛科技大学，目前是在读硕士，就读于东华大学。两年腰突患者 爱好：读书——偏武侠，科幻小说；</description>
+    </item>
+    
+    <item>
+      <title>Write to Grandpa</title>
+      <link>http://localhost:1313/post/write-to-grandpa/</link>
+      <pubDate>Fri, 12 Aug 2022 13:59:39 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/write-to-grandpa/</guid>
+      <description>&lt;p&gt;外公去世&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Future Article</title>
+      <link>http://localhost:1313/post/my-future-article/</link>
+      <pubDate>Wed, 10 Aug 2022 09:36:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/my-future-article/</guid>
+      <description>&lt;p&gt;写这篇文章的初衷是，回忆本人研一下学期的科研内容。由于笔者在在暑假经历了腰椎微创手术，科研进度已经严重滞后，为了尽快适应新学期的科研节奏，特地做一篇博客进行中期总结。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,10 +90,10 @@
     
     <item>
       <title>基于hugo&#43;github搭建个人博客</title>
-      <link>http://localhost:1313/post/setblog/</link>
+      <link>http://localhost:1313/post/create-blog/</link>
       <pubDate>Mon, 11 Jul 2022 22:22:44 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/setblog/</guid>
+      <guid>http://localhost:1313/post/create-blog/</guid>
       <description>&lt;p&gt;原本想一直用博客园就好，简简单单，不需要过多的折腾。但是因为博客园的编辑窗口实在是太丑，且我还是喜欢文章放在本地就好，只存在网路上实在是不放心。另外就是，像hugo、hexo这类静态博客只需要几个命令就可以发布文章，基于Go语言的hugo部署会更加便捷，因此我就选择了hugo&lt;/p&gt;</description>
     </item>
     

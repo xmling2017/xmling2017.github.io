@@ -18,10 +18,10 @@
     
     <item>
       <title>基于hugo&#43;github搭建个人博客</title>
-      <link>http://localhost:1313/post/setblog/</link>
+      <link>http://localhost:1313/post/create-blog/</link>
       <pubDate>Mon, 11 Jul 2022 22:22:44 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/setblog/</guid>
+      <guid>http://localhost:1313/post/create-blog/</guid>
       <description>&lt;p&gt;原本想一直用博客园就好，简简单单，不需要过多的折腾。但是因为博客园的编辑窗口实在是太丑，且我还是喜欢文章放在本地就好，只存在网路上实在是不放心。另外就是，像hugo、hexo这类静态博客只需要几个命令就可以发布文章，基于Go语言的hugo部署会更加便捷，因此我就选择了hugo&lt;/p&gt;</description>
     </item>
     

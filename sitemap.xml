@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/post/my-future-article/</loc>
-    <lastmod>2022-08-10T09:36:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -60,6 +53,13 @@
   <url>
     <loc>http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/</loc>
     <lastmod>2022-08-12T13:59:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/my-future-article/</loc>
+    <lastmod>2022-08-10T09:36:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

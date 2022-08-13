@@ -58,13 +58,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/this-new-post/</loc>
-    <lastmod>2022-08-13T15:36:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/post/write-to-grandpa/</loc>
     <lastmod>2022-08-12T13:59:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -249,13 +242,6 @@
   <url>
     <loc>http://localhost:1313/post/even-preview/</loc>
     <lastmod>2018-07-10T00:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/hidden-post/</loc>
-    <lastmod>2018-03-08T22:01:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

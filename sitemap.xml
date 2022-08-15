@@ -17,34 +17,55 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2022-08-13T15:57:17+08:00</lastmod>
+    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/photo-iphone12/</loc>
+    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2022-08-13T15:57:17+08:00</lastmod>
+    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2022-08-13T15:57:17+08:00</lastmod>
+    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E7%A7%91%E7%A0%94/</loc>
-    <lastmod>2022-08-13T15:57:17+08:00</lastmod>
+    <loc>http://localhost:1313/tags/%E6%90%AC%E8%BF%90/</loc>
+    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E6%91%84%E5%BD%B1/</loc>
+    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E7%A7%91%E7%A0%94/</loc>
     <lastmod>2022-08-13T15:57:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -122,13 +143,6 @@
   
   <url>
     <loc>http://localhost:1313/post/powershell/</loc>
-    <lastmod>2022-07-14T18:41:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/%E6%90%AC%E8%BF%90/</loc>
     <lastmod>2022-07-14T18:41:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

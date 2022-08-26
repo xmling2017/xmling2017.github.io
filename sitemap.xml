@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/post/clusion-to-articles/</loc>
+    <loc>http://localhost:1313/post/conlusion-to-articles/</loc>
     <lastmod>2022-08-13T15:57:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -16,6 +16,27 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2022-08-26T14:45:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/this-is-test/</loc>
+    <lastmod>2022-08-26T14:45:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-08-26T14:45:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2022-08-15T08:15:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -24,13 +45,6 @@
   
   <url>
     <loc>http://localhost:1313/post/photo-iphone12/</loc>
-    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
     <lastmod>2022-08-15T08:15:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -52,13 +66,6 @@
   
   <url>
     <loc>http://localhost:1313/categories/%E6%91%84%E5%BD%B1/</loc>
-    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2022-08-15T08:15:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/my-diary-menu/</loc>
+    <loc>http://localhost:1313/categories/%E7%BE%8E%E9%A3%9F/</loc>
     <lastmod>2022-07-30T06:25:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E7%BE%8E%E9%A3%9F/</loc>
+    <loc>http://localhost:1313/post/my-diary-menu/</loc>
     <lastmod>2022-07-30T06:25:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

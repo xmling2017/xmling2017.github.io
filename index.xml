@@ -6,13 +6,13 @@
     <description>Recent content on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Aug 2022 08:15:11 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Aug 2022 14:45:06 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022暑期科研总结</title>
-      <link>http://localhost:1313/post/clusion-to-articles/</link>
+      <link>http://localhost:1313/post/conlusion-to-articles/</link>
       <pubDate>Sat, 13 Aug 2022 15:57:17 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/clusion-to-articles/</guid>
+      <guid>http://localhost:1313/post/conlusion-to-articles/</guid>
       <description>&lt;p&gt;写这篇文章的初衷是，回忆本人研一下学期的科研内容。由于笔者在在暑假经历了腰椎微创手术，科研进度已经严重滞后，为了尽快适应新学期的科研节奏，特地做一篇博客进行中期总结。&lt;/p&gt;</description>
     </item>
     
@@ -23,6 +23,15 @@
       
       <guid>http://localhost:1313/about/</guid>
       <description>作者简介 作者笔名：李明勖，江苏泰州人士。本科毕业于青岛科技大学，目前是在读硕士，就读于东华大学。两年腰突患者 爱好：读书——偏武侠，科幻小说；</description>
+    </item>
+    
+    <item>
+      <title>This Is Test</title>
+      <link>http://localhost:1313/post/this-is-test/</link>
+      <pubDate>Fri, 26 Aug 2022 14:45:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/this-is-test/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -44,7 +53,7 @@
     </item>
     
     <item>
-      <title>My Diary Menu</title>
+      <title>我的菜谱</title>
       <link>http://localhost:1313/post/my-diary-menu/</link>
       <pubDate>Sat, 30 Jul 2022 06:25:07 +0800</pubDate>
       

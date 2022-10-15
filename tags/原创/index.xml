@@ -26,15 +26,6 @@
     </item>
     
     <item>
-      <title>我的菜谱</title>
-      <link>http://localhost:1313/post/my-diary-menu/</link>
-      <pubDate>Sat, 30 Jul 2022 06:25:07 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/my-diary-menu/</guid>
-      <description>&lt;p&gt;记录日常自己动手做的菜谱，大部分学习自B站的美食作家王刚老师。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>腰背的自我修复</title>
       <link>http://localhost:1313/post/back-mechanic/</link>
       <pubDate>Mon, 25 Jul 2022 17:14:46 +0800</pubDate>

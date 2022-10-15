@@ -93,27 +93,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/diy/</loc>
-    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/%E7%BE%8E%E9%A3%9F/</loc>
-    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/my-diary-menu/</loc>
-    <lastmod>2022-07-30T06:25:07+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/categories/mcgill%E6%B3%95/</loc>
     <lastmod>2022-07-25T17:14:46+08:00</lastmod>
     <changefreq>weekly</changefreq>

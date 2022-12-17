@@ -16,28 +16,56 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
+    <loc>http://localhost:1313/post/welcome-to-new-colleague/</loc>
+    <lastmod>2022-10-30T10:56:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/photo-iphone12/</loc>
-    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2022-10-30T10:56:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
+    <lastmod>2022-10-30T10:56:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2022-10-30T10:56:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E8%AF%BE%E9%A2%98%E7%BB%84%E6%B4%BB%E5%8A%A8/</loc>
+    <lastmod>2022-10-30T10:56:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-10-30T10:56:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/</loc>
+    <lastmod>2022-10-30T10:56:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/photo-iphone12/</loc>
     <lastmod>2022-08-15T08:15:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -58,21 +86,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2022-08-15T08:15:11+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/categories/%E7%A7%91%E7%A0%94/</loc>
-    <lastmod>2022-08-13T15:57:17+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/</loc>
     <lastmod>2022-08-13T15:57:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

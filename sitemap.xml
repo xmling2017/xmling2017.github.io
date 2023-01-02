@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/post/conlusion-to-articles/</loc>
-    <lastmod>2022-08-13T15:57:17+08:00</lastmod>
+    <loc>http://localhost:1313/post/my-2022/</loc>
+    <lastmod>2023-01-01T21:25:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -11,13 +11,6 @@
   <url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/my-2022/</loc>
-    <lastmod>2023-01-01T21:25:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -95,6 +88,13 @@
   <url>
     <loc>http://localhost:1313/categories/%E6%91%84%E5%BD%B1/</loc>
     <lastmod>2022-08-15T08:15:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/conlusion-to-articles/</loc>
+    <lastmod>2022-08-13T15:57:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

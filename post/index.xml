@@ -8,16 +8,7 @@
     <language>en</language>
     <lastBuildDate>Sun, 01 Jan 2023 21:25:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2022暑期科研总结</title>
-      <link>http://localhost:1313/post/conlusion-to-articles/</link>
-      <pubDate>Sat, 13 Aug 2022 15:57:17 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/conlusion-to-articles/</guid>
-      <description>&lt;p&gt;写这篇文章的初衷是，回忆本人研一下学期的科研内容。由于笔者在在暑假经历了腰椎微创手术，科研进度已经严重滞后，为了尽快适应新学期的科研节奏，特地做一篇博客进行中期总结。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>**我的2022**——年度总结</title>
+      <title>我的2022——年度总结</title>
       <link>http://localhost:1313/post/my-2022/</link>
       <pubDate>Sun, 01 Jan 2023 21:25:32 +0800</pubDate>
       
@@ -32,6 +23,15 @@
       
       <guid>http://localhost:1313/post/photo-iphone12/</guid>
       <description>&lt;p&gt;熟悉手中的iPhone12，拥有灵活的拍摄技能以及一双发现美的眼睛。本篇以iPhone 12为例&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2022暑期科研总结</title>
+      <link>http://localhost:1313/post/conlusion-to-articles/</link>
+      <pubDate>Sat, 13 Aug 2022 15:57:17 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/conlusion-to-articles/</guid>
+      <description>&lt;p&gt;写这篇文章的初衷是，回忆本人研一下学期的科研内容。由于笔者在在暑假经历了腰椎微创手术，科研进度已经严重滞后，为了尽快适应新学期的科研节奏，特地做一篇博客进行中期总结。&lt;/p&gt;</description>
     </item>
     
     <item>

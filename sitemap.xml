@@ -16,14 +16,28 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2023-01-01T21:25:32+08:00</lastmod>
+    <loc>http://localhost:1313/post/latex&#43;wsl&#43;vscode/</loc>
+    <lastmod>2023-01-16T14:34:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
+    <lastmod>2023-01-16T14:34:27+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2023-01-16T14:34:27+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-01-01T21:25:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,13 +59,6 @@
   
   <url>
     <loc>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-01-01T21:25:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2023-01-01T21:25:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

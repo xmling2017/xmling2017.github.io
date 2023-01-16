@@ -16,7 +16,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="李明勖" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="李明勖" /><meta name="description" content="由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。
+" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +41,19 @@
 
 
 <meta property="og:title" content="LaTeX&#43;WSL&#43;VSCode" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/latex&#43;wsl&#43;vscode/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-01-16T14:34:27+08:00" />
 <meta property="article:modified_time" content="2023-01-16T14:34:27+08:00" />
 
 <meta itemprop="name" content="LaTeX&#43;WSL&#43;VSCode">
-<meta itemprop="description" content=""><meta itemprop="datePublished" content="2023-01-16T14:34:27+08:00" />
+<meta itemprop="description" content="由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。"><meta itemprop="datePublished" content="2023-01-16T14:34:27+08:00" />
 <meta itemprop="dateModified" content="2023-01-16T14:34:27+08:00" />
-<meta itemprop="wordCount" content="662">
+<meta itemprop="wordCount" content="947">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="LaTeX&#43;WSL&#43;VSCode"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -134,7 +135,7 @@
       <div class="post-meta">
         <span class="post-time"> 2023-01-16 </span>
         
-          <span class="more-meta"> 约 662 字 </span>
+          <span class="more-meta"> 约 947 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
         
       </div>
@@ -153,6 +154,13 @@
           </ul>
         </li>
         <li><a href="#wslwindows-subsystem-for-linux非c盘系统盘下载">WSL(windows subsystem for Linux)非C盘（系统盘）下载</a></li>
+        <li><a href="#在wsl中安装latex">在WSL中安装LaTeX</a>
+          <ul>
+            <li><a href="#下载latex">下载LaTeX</a></li>
+            <li><a href="#通过iso镜像文件安装">通过iso镜像文件安装</a></li>
+            <li><a href="#设置环境变量">设置环境变量</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -160,7 +168,8 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="vscode下载">VSCode下载</h2>
+      <p>由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。</p>
+<h2 id="vscode下载">VSCode下载</h2>
 <h3 id="国内镜像下载">国内镜像下载</h3>
 <p>因为VsCode官方下载速度实在另人捉急，使用国内镜像下载速度可以直接起飞，废话不多说：</p>
 <ol>
@@ -182,11 +191,36 @@
 <div class="admonition failure"><p class="admonition-title">注意</p>
 <p>需要注意的是安装目录的磁盘不能开<strong>压缩内容以便节省磁盘空间</strong>选项，否则会报错<code>0xc03a001a</code>，可以右键<code>磁盘--&gt;属性</code>，找到并关闭这个选项</p>
 <center>
-  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202301162113434.png" alt="" width="350" height=""></img>
+  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202301162113434.png" alt="" width="200" height=""></img>
   <br>
   <font size="2"><strong>该选项所在位置</strong></font>
 </center>
 </div>
+<h2 id="在wsl中安装latex">在WSL中安装LaTeX</h2>
+<h3 id="下载latex">下载LaTeX</h3>
+<p>打开<a href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源软件镜像站</a>，到图中所示路径下载合适的iso镜像文件</p>
+<center>
+  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202301162120541.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>镜像网站下载路径</strong></font>
+</center>
+<h3 id="通过iso镜像文件安装">通过iso镜像文件安装</h3>
+<p>在线安装速度相对会比较慢，可以通过加载虚拟光驱进行安装，在Windows中加载虚拟光驱，并记住光驱盘符。</p>
+<p>在WSL中创建文件夹，挂载虚拟光驱到新创建的文件夹，然后进入安装程序：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mkdir /mnt/img
+</span></span><span class="line"><span class="cl">sudo mount -t drvfs F: /mnt/img
+</span></span><span class="line"><span class="cl">sudo mnt/img/install-tl
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>设置好后，键入<em>i</em>开始安装</p>
+<h3 id="设置环境变量">设置环境变量</h3>
     </div>
 
     

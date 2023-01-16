@@ -32,7 +32,7 @@
       <pubDate>Mon, 16 Jan 2023 14:34:27 +0800</pubDate>
       
       <guid>http://localhost:1313/post/latex&#43;wsl&#43;vscode/</guid>
-      <description></description>
+      <description>&lt;p&gt;由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。&lt;/p&gt;</description>
     </item>
     
     <item>

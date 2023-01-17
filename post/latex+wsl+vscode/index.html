@@ -50,7 +50,7 @@
 <meta itemprop="name" content="LaTeX&#43;WSL&#43;VSCode">
 <meta itemprop="description" content="由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。"><meta itemprop="datePublished" content="2023-01-16T14:34:27+08:00" />
 <meta itemprop="dateModified" content="2023-01-16T14:34:27+08:00" />
-<meta itemprop="wordCount" content="947">
+<meta itemprop="wordCount" content="1592">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="LaTeX&#43;WSL&#43;VSCode"/>
 <meta name="twitter:description" content="由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。"/>
@@ -135,8 +135,8 @@
       <div class="post-meta">
         <span class="post-time"> 2023-01-16 </span>
         
-          <span class="more-meta"> 约 947 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+          <span class="more-meta"> 约 1592 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
         
       </div>
     </header>
@@ -159,6 +159,12 @@
             <li><a href="#下载latex">下载LaTeX</a></li>
             <li><a href="#通过iso镜像文件安装">通过iso镜像文件安装</a></li>
             <li><a href="#设置环境变量">设置环境变量</a></li>
+            <li><a href="#在wsl里使用windows字体">在WSL里使用Windows字体</a></li>
+          </ul>
+        </li>
+        <li><a href="#在vscode中使用">在VSCode中使用</a>
+          <ul>
+            <li><a href="#使用remote插件">使用Remote插件</a></li>
           </ul>
         </li>
       </ul>
@@ -183,7 +189,7 @@
 <p>但是有一个另人困扰的问题：在Microsoft Store下载的WSL发行版会自动安装到C盘，不能手动修改安装位置。</p>
 <p>微软提供了一个手动下载WSL发行版的地址：<a href="https://learn.microsoft.com/zh-cn/windows/wsl/install-manual">手动下载适用于Linux的Windows子系统发行版包</a></p>
 <center>
-  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202301161507842.png" alt="" width="350" height=""></img>
+  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202301161507842.png" alt="" width="200" height=""></img>
   <br>
   <font size="2"><strong>从这里下载WSL发行版，可以绕开MS Store的自动安装</strong></font>
 </center>
@@ -200,12 +206,12 @@
 <h3 id="下载latex">下载LaTeX</h3>
 <p>打开<a href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源软件镜像站</a>，到图中所示路径下载合适的iso镜像文件</p>
 <center>
-  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202301162120541.png" alt="" width="350" height=""></img>
+  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202301162120541.png" alt="" width="200" height=""></img>
   <br>
   <font size="2"><strong>镜像网站下载路径</strong></font>
 </center>
 <h3 id="通过iso镜像文件安装">通过iso镜像文件安装</h3>
-<p>在线安装速度相对会比较慢，可以通过加载虚拟光驱进行安装，在Windows中加载虚拟光驱，并记住光驱盘符。</p>
+<p>在线安装速度相对会比较慢，可以通过加载虚拟光驱进行安装，在Windows中加载虚拟光驱，并记住光驱盘符（下面假设光驱盘符为F:）。</p>
 <p>在WSL中创建文件夹，挂载虚拟光驱到新创建的文件夹，然后进入安装程序：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -214,13 +220,83 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mkdir /mnt/img
-</span></span><span class="line"><span class="cl">sudo mount -t drvfs F: /mnt/img
-</span></span><span class="line"><span class="cl">sudo mnt/img/install-tl
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mkdir /mnt/texlive
+</span></span><span class="line"><span class="cl">sudo mount -t drvfs F: /mnt/texlive
+</span></span><span class="line"><span class="cl">sudo mnt/texlive/install-tl
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>设置好后，键入<em>i</em>开始安装</p>
-<h3 id="设置环境变量">设置环境变量</h3>
+<p>安装好后，需要解除挂载状态，并删除安装包，命令如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo umount /mnt/texlive
+</span></span><span class="line"><span class="cl">sudo rm -r /mnt/texlive/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="设置环境变量">设置环境变量</h3>
+<p>设置环境变量有两种方法，一种是通过编辑<code>~/.bashrc</code>文件，在该文件最后添加<code>export PATH=/.../:$PATH</code>，具体见下面代码。但是这样设置的变量在Windows的cmd或PowerShell里无法通过<code>wsl tex</code>来使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+</span></span><span class="line"><span class="cl">export MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH.
+</span></span><span class="line"><span class="cl">export INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>另一种方式是，当通过apt安装的texlive可以通过<code>wsl</code>命令调用，而这样安装的texlive可执行文件是放在<code>/usr/local/bin</code>目录下，那么创建一个软链接放到该文件夹下，就可以直接撞见texlive所有的可执行文件的软链接，然后就可以直接在PowerShell下使用。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#需要提前了解texlive的安装目录
+</span></span><span class="line"><span class="cl">sudo /usr/local/texlive/2020/bin/x86_64-linux/tlmgr path add
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第二种方式下，在PowerShell下输入<code>wsl tex -v</code>即可得到安装的texlive的安装信息。而第一种方法下，只能在wsl命令界面输入<code>tex -v</code>才能得到。</p>
+<h3 id="在wsl里使用windows字体">在WSL里使用Windows字体</h3>
+<p>安装「fontconfig」：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install fontconfig
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在<code>/etc/fonts/</code>新建一个文件<code>local.conf</code>，添加一下内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?xml version=&#34;1.0&#34;?&gt;
+</span></span><span class="line"><span class="cl">&lt;!DOCTYPE fontconfig SYSTEM &#34;fonts.dtd&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;fontconfig&gt;
+</span></span><span class="line"><span class="cl">    &lt;dir&gt;/mnt/c/Windows/Fonts&lt;/dir&gt;
+</span></span><span class="line"><span class="cl">&lt;/fontconfig&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后使用<code>sudo fc-cache -fv</code>刷新一下字体缓存，就可以使用Windows中的字体。</p>
+<div class="admonition tip"><p class="admonition-title">提示</p>
+<p>如果出现无权限保存所编辑的文件时，建议先在桌面上新建需要保存的文件，然后用<code>sudo</code>来复制到目标文件夹下</p>
+</div>
+<h2 id="在vscode中使用">在VSCode中使用</h2>
+<h3 id="使用remote插件">使用Remote插件</h3>
+<p>要在VSCode下使用WSL的texlive，可直接安装WSL插件</p>
     </div>
 
     

@@ -6,7 +6,7 @@
     <description>Recent content in 原创 on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jan 2023 21:25:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jan 2023 14:34:27 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的2022——年度总结</title>
       <link>http://localhost:1313/post/my-2022/</link>
@@ -15,6 +15,15 @@
       <guid>http://localhost:1313/post/my-2022/</guid>
       <description>&lt;p&gt;2022，一个不太让人兴奋的一年，对我来说。这一年，我经历了三个月的宿舍封控；两个月的术后康复，期间还经历了外公的离世；梅西的世界杯夺冠；以及社会层面的封控解除，体验了一段令人痛苦的感染恢复期，目前仍在恢复。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://pullup.oss-cn-shanghai.aliyuncs.com/img/202301082028713.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; height=&#34;&#34;&gt;&lt;/img&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高Win端tex文件编译速度的新方案——LaTeX&#43;WSL&#43;VSCode</title>
+      <link>http://localhost:1313/post/latex&#43;wsl&#43;vscode/</link>
+      <pubDate>Mon, 16 Jan 2023 14:34:27 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/latex&#43;wsl&#43;vscode/</guid>
+      <description>&lt;p&gt;由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。&lt;/p&gt;</description>
     </item>
     
     <item>

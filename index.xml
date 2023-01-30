@@ -6,7 +6,7 @@
     <description>Recent content on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Jan 2023 14:34:27 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jan 2023 12:43:38 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的2022——年度总结</title>
       <link>http://localhost:1313/post/my-2022/</link>
@@ -24,6 +24,16 @@
       
       <guid>http://localhost:1313/about/</guid>
       <description>作者简介 作者笔名：李明勖，江苏泰州人士。本科毕业于青岛科技大学，目前是在读硕士，就读于东华大学。两年腰突患者 爱好：读书——偏武侠，科幻小说；</description>
+    </item>
+    
+    <item>
+      <title>Test Again</title>
+      <link>http://localhost:1313/post/test-again/</link>
+      <pubDate>Mon, 30 Jan 2023 12:43:38 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/test-again/</guid>
+      <description>&lt;p&gt;ddd
+ddd&lt;/p&gt;</description>
     </item>
     
     <item>

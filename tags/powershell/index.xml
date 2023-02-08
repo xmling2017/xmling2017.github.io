@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell on 野山猫 - 東京1939</title>
+    <link>http://localhost:1313/tags/powershell/</link>
+    <description>Recent content in PowerShell on 野山猫 - 東京1939</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 Jul 2022 18:41:14 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powershell美化</title>
+      <link>http://localhost:1313/post/powershell/</link>
+      <pubDate>Thu, 14 Jul 2022 18:41:14 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/powershell/</guid>
+      <description>具体操作请观看b站up主老湿基 步骤 先下载最新版PowerShell并安装，下载配制文件1 到Microsoft store安装windows te</description>
+    </item>
+    
+  </channel>
+</rss>

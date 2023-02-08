@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机 on 野山猫 - 東京1939</title>
+    <link>http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    <description>Recent content in 计算机 on 野山猫 - 東京1939</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Feb 2023 14:34:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的LINUX学习之路——从入门到入土</title>
+      <link>http://localhost:1313/post/my-journey-of-linux/</link>
+      <pubDate>Wed, 08 Feb 2023 14:34:09 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/my-journey-of-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>提高Win端tex文件编译速度的新方案——LaTeX&#43;WSL&#43;VSCode</title>
+      <link>http://localhost:1313/post/latex&#43;wsl&#43;vscode/</link>
+      <pubDate>Mon, 16 Jan 2023 14:34:27 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/latex&#43;wsl&#43;vscode/</guid>
+      <description>&lt;p&gt;由于一些字体方面的问题，LaTeX在Windows下速度会比Linux慢一些，对于不希望只因为这个而整体迁移到Linux的用户，使用Windows提供的Linux子系统不失为一个不错的选择。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Powershell美化</title>
+      <link>http://localhost:1313/post/powershell/</link>
+      <pubDate>Thu, 14 Jul 2022 18:41:14 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/powershell/</guid>
+      <description>具体操作请观看b站up主老湿基 步骤 先下载最新版PowerShell并安装，下载配制文件1 到Microsoft store安装windows te</description>
+    </item>
+    
+    <item>
+      <title>PicGo&#43;阿里云OSS图床</title>
+      <link>http://localhost:1313/post/pic_go/</link>
+      <pubDate>Thu, 14 Jul 2022 17:44:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/pic_go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>基于hugo&#43;github搭建个人博客</title>
+      <link>http://localhost:1313/post/create-blog/</link>
+      <pubDate>Mon, 11 Jul 2022 22:22:44 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/create-blog/</guid>
+      <description>&lt;p&gt;原本想一直用博客园就好，简简单单，不需要过多的折腾。但是因为博客园的编辑窗口实在是太丑，且我还是喜欢文章放在本地就好，只存在网路上实在是不放心。另外就是，像hugo、hexo这类静态博客只需要几个命令就可以发布文章，基于Go语言的hugo部署会更加便捷，因此我就选择了hugo&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

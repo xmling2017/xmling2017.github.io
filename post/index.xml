@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Jan 2023 12:43:38 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Feb 2023 14:34:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的2022——年度总结</title>
       <link>http://localhost:1313/post/my-2022/</link>
@@ -18,13 +18,12 @@
     </item>
     
     <item>
-      <title>Test Again</title>
-      <link>http://localhost:1313/post/test-again/</link>
-      <pubDate>Mon, 30 Jan 2023 12:43:38 +0800</pubDate>
+      <title>我的LINUX学习之路——从入门到入土</title>
+      <link>http://localhost:1313/post/my-journey-of-linux/</link>
+      <pubDate>Wed, 08 Feb 2023 14:34:09 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/test-again/</guid>
-      <description>&lt;p&gt;ddd
-ddd&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/my-journey-of-linux/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -132,7 +131,8 @@ ddd&lt;/p&gt;</description>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
       <guid>http://localhost:1313/post/english-preview/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme. We&amp;rsquo;ll start with creating a new site with</description>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>

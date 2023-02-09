@@ -16,7 +16,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="李明勖" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="李明勖" /><meta name="description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。
+" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +41,19 @@
 
 
 <meta property="og:title" content="我的LINUX学习之路——从入门到入土" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/my-journey-of-linux/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-02-08T14:34:09+08:00" />
 <meta property="article:modified_time" content="2023-02-08T14:34:09+08:00" />
 
 <meta itemprop="name" content="我的LINUX学习之路——从入门到入土">
-<meta itemprop="description" content=""><meta itemprop="datePublished" content="2023-02-08T14:34:09+08:00" />
+<meta itemprop="description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。"><meta itemprop="datePublished" content="2023-02-08T14:34:09+08:00" />
 <meta itemprop="dateModified" content="2023-02-08T14:34:09+08:00" />
-<meta itemprop="wordCount" content="16">
+<meta itemprop="wordCount" content="904">
 <meta itemprop="keywords" content="Linux,编程,计算机,系统," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的LINUX学习之路——从入门到入土"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -137,8 +138,8 @@
             <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
             <a href="/categories/%E6%90%AC%E8%BF%90/"> 搬运 </a>
             </div>
-          <span class="more-meta"> 约 16 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 904 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         
       </div>
     </header>
@@ -146,11 +147,80 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#安装kubuntu22004lst系统双系统">安装Kubuntu220.04LST系统双系统</a>
+          <ul>
+            <li><a href="#下载系统镜像文件并制作启动盘">下载系统镜像文件并制作启动盘</a></li>
+            <li><a href="#磁盘分区和格式">磁盘分区和格式</a></li>
+            <li><a href="#驱动及时间同步问题">驱动及时间同步问题</a></li>
+            <li><a href="#小鹤音形挂接rime输入法的安装">小鹤音形挂接Rime输入法的安装</a></li>
+            <li><a href="#windows-字体的安装">Windows 字体的安装</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
     <div class="post-content">
-      <p>安装无线网卡驱动<code>sudo apt-get install --reinstall bcmwl-kernel-source</code></p>
+      <p>给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。</p>
+<h2 id="安装kubuntu22004lst系统双系统">安装Kubuntu220.04LST系统双系统</h2>
+<p>这部分内容参考<a href="https://www.bilibili.com/video/BV1554y1n7zv/?share_source=copy_web&amp;vd_source=74f7aedcc2240cf73120aa58afdcb5b7">Windows 和 Ubuntu 双系统的安装和卸载</a>。</p>
+<h3 id="下载系统镜像文件并制作启动盘">下载系统镜像文件并制作启动盘</h3>
+<p>打开<a href="https://kubuntu.org/getkubuntu/">Kubuntu 官网</a>，点击所需要的版本下载。</p>
+<p>下载完镜像文件后，需要用软件制作USB启动盘，这里推荐<a href="https://www.balena.io/etcher">balenaETcher</a>，操作简单，不多逼逼。</p>
+<h3 id="磁盘分区和格式">磁盘分区和格式</h3>
+<p>现在的电脑磁盘格式一般是GPT格式，但不排除一些旧电脑是MBR。这里仅介绍GPT格式的安装方式。</p>
+<p>安装之前需要到电脑的BIOS界面，设置EFI优先启动。</p>
+<p>Kubuntu的分区方案一般是，500MB的<code>EFI系统分区</code>，8GB的<code>swap也就是交换空间</code>，40~60GB的根目录，剩下的home空间能留多少留多少，二者都用于Ext4日志文件系统。</p>
+<h3 id="驱动及时间同步问题">驱动及时间同步问题</h3>
+<p>一般老电脑安装时会遇到，无线网卡驱动缺失的问题，这里给出一种解决方案：先在电脑上查看你的无线驱动的型号，然后根据对应的型号去Github上搜索，<code>git clone</code>下来，一般作者都会给出安装方案。</p>
+<p>因为我的电脑不需要，这里就不多缀述了</p>
+<p>安装无线网卡驱动<code>sudo apt-get install --reinstall bcmwl-kernel-source</code>。</p>
+<p>关于双系统的时间冲突，是因为两系统的时间机制不同，需要将Kubuntu的时间机制改成同Windows一样的就行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#重新设定时间
+</span></span><span class="line"><span class="cl">sudo apt install ntpdate
+</span></span><span class="line"><span class="cl">sudo ntpdate time-windows.com
+</span></span><span class="line"><span class="cl">#转换时间机制，并同步BIOS的时间
+</span></span><span class="line"><span class="cl">sudo hwclook --localtime -systohc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>由于我们电脑开机的默认启动项都是Windows，这里只需要<code>sudo kate /etc/default/grub</code>，将文件中的启动数字改成对应的Windows的启动数字即可，然后<code>sudo update-grub</code></p>
+<h3 id="小鹤音形挂接rime输入法的安装">小鹤音形挂接Rime输入法的安装</h3>
+<p>首先是安装Rime，一般分为ibus框架和fcitx框架两种选择，以fcitx框架为例，两种方式都是参照<a href="http://t.csdn.cn/pppiJ">这个链接</a>。</p>
+<ol>
+<li>安装中州韻<code>sudo apt install fcitx-rime</code></li>
+<li>挂载小鹤音形
+<ul>
+<li><a href="http://flypy.ysepan.com/">官网</a>下载码表，点击「挂接——音形码」，选择<code>小鹤音形“鼠须管”for macOS.zip</code></li>
+<li>解压后，进入<code>/home/你的用户名/.config/fcitx</code>，把<code>rime</code>文件删除，然后把解压包中的<code>rime</code>文件夹复制进去。</li>
+</ul>
+</li>
+</ol>
+<h3 id="windows-字体的安装">Windows 字体的安装</h3>
+<p>先安装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install -y font-manager ttf-mscorefonts-installer fontconfig
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     

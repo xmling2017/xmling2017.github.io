@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DNS on 野山猫 - 東京1939</title>
+    <link>http://localhost:1313/tags/dns/</link>
+    <description>Recent content in DNS on 野山猫 - 東京1939</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Mar 2023 11:50:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IPv6 to IPv4</title>
+      <link>http://localhost:1313/post/ipv6-to-ipv4/</link>
+      <pubDate>Sat, 04 Mar 2023 11:50:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/ipv6-to-ipv4/</guid>
+      <description>&lt;p&gt;博客网页经常出现打不开（大概不是连接超时，就是连接失败）的问题，但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

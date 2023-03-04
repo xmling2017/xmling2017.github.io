@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/dns-%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://localhost:1313/tags/dns/</loc>
     <lastmod>2023-03-04T11:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -51,6 +51,13 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2023-03-04T11:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -58,7 +65,14 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E8%BD%AC%E8%BD%BD-%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/</loc>
+    <loc>http://localhost:1313/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/</loc>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2023-03-04T11:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -94,20 +108,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2023-02-08T14:34:09+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/</loc>
-    <lastmod>2023-02-08T14:34:09+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2023-02-08T14:34:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -346,13 +346,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2022-07-12T14:26:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

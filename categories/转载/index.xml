@@ -6,7 +6,16 @@
     <description>Recent content in 转载 on 野山猫 - 東京1939</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Feb 2023 14:34:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Mar 2023 11:50:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IPv6 to IPv4</title>
+      <link>http://localhost:1313/post/ipv6-to-ipv4/</link>
+      <pubDate>Sat, 04 Mar 2023 11:50:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/ipv6-to-ipv4/</guid>
+      <description>&lt;p&gt;博客网页经常出现打不开（大概不是连接超时，就是连接失败）的问题，但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>我的LINUX学习之路——从入门到入土</title>
       <link>http://localhost:1313/post/my-journey-of-linux/</link>

@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="李明勖" /><meta name="description" content="博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。
+<meta name="author" content="李明勖" /><meta name="description" content="博客网页经常出现打不开（大概不是连接超时，就是连接失败）的问题，但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。
 " /><meta name="keywords" content="Hugo, theme, even" />
 
 
@@ -41,19 +41,19 @@
 
 
 <meta property="og:title" content="IPv6 to IPv4" />
-<meta property="og:description" content="博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。" />
+<meta property="og:description" content="博客网页经常出现打不开（大概不是连接超时，就是连接失败）的问题，但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/ipv6-to-ipv4/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-03-04T11:50:50+08:00" />
 <meta property="article:modified_time" content="2023-03-04T11:50:50+08:00" />
 
 <meta itemprop="name" content="IPv6 to IPv4">
-<meta itemprop="description" content="博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。"><meta itemprop="datePublished" content="2023-03-04T11:50:50+08:00" />
+<meta itemprop="description" content="博客网页经常出现打不开（大概不是连接超时，就是连接失败）的问题，但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。"><meta itemprop="datePublished" content="2023-03-04T11:50:50+08:00" />
 <meta itemprop="dateModified" content="2023-03-04T11:50:50+08:00" />
-<meta itemprop="wordCount" content="694">
-<meta itemprop="keywords" content="DNS 博客," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="696">
+<meta itemprop="keywords" content="DNS,博客," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="IPv6 to IPv4"/>
-<meta name="twitter:description" content="博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。"/>
+<meta name="twitter:description" content="博客网页经常出现打不开（大概不是连接超时，就是连接失败）的问题，但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -135,9 +135,10 @@
       <div class="post-meta">
         <span class="post-time"> 2023-03-04 </span>
         <div class="post-category">
-            <a href="/categories/%E8%BD%AC%E8%BD%BD-%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 转载 知识拓展 </a>
+            <a href="/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
+            <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
             </div>
-          <span class="more-meta"> 约 694 字 </span>
+          <span class="more-meta"> 约 696 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
         
       </div>
@@ -160,7 +161,7 @@
   </div>
 </div>
     <div class="post-content">
-      <p>博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。</p>
+      <p>博客网页经常出现打不开（大概不是连接超时，就是连接失败）的问题，但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。</p>
 <h2 id="解决方法">解决方法</h2>
 <p>参考<a href="https://www.jianshu.com/p/7226e940088e">这篇博客</a>的方法，大概就是让Windows优先访问iPv4资源（至少可以做到解析时优先使用A记录而非AAAA记录）。</p>
 <p>因为主流的Windows系统（从Windows7之后），都会同时使用iPv4和iPv6，并且优先使用iPv6，当<code>Ping</code>另一个服务器的时候就能看到，优先使用的是iPv6进行通信。</p>
@@ -190,7 +191,8 @@
   </div>
 </div><footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/dns-%E5%8D%9A%E5%AE%A2/">DNS 博客</a>
+          <a href="/tags/dns/">DNS</a>
+          <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
           </div>
       <nav class="post-nav">
         <a class="prev" href="/post/my-2022/">

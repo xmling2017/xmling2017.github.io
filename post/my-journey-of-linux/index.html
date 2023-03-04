@@ -50,7 +50,7 @@
 <meta itemprop="name" content="我的LINUX学习之路——从入门到入土">
 <meta itemprop="description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。"><meta itemprop="datePublished" content="2023-02-08T14:34:09+08:00" />
 <meta itemprop="dateModified" content="2023-02-08T14:34:09+08:00" />
-<meta itemprop="wordCount" content="1061">
+<meta itemprop="wordCount" content="2172">
 <meta itemprop="keywords" content="Linux,编程,计算机,系统," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的LINUX学习之路——从入门到入土"/>
 <meta name="twitter:description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。"/>
@@ -138,8 +138,8 @@
             <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
             <a href="/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
             </div>
-          <span class="more-meta"> 约 1061 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
+          <span class="more-meta"> 约 2172 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
         
       </div>
     </header>
@@ -159,6 +159,14 @@
             <li><a href="#驱动及时间同步问题">驱动及时间同步问题</a></li>
             <li><a href="#小鹤音形挂接rime输入法的安装">小鹤音形挂接Rime输入法的安装</a></li>
             <li><a href="#windows-字体的安装">Windows 字体的安装</a></li>
+          </ul>
+        </li>
+        <li><a href="#常用软件的安装">常用软件的安装</a>
+          <ul>
+            <li><a href="#安装latex">安装LaTeX</a></li>
+            <li><a href="#卸载tex-live">卸载TEX Live</a></li>
+            <li><a href="#安装-zotero">安装 Zotero</a></li>
+            <li><a href="#安装-firefox">安装 Firefox</a></li>
           </ul>
         </li>
       </ul>
@@ -200,7 +208,9 @@
 </span></span><span class="line"><span class="cl">sudo hwclock --localtime --systohc
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>由于我们电脑开机的默认启动项都是Windows，这里只需要<code>sudo kate /etc/default/grub</code>，将文件中的启动数字改成对应的Windows的启动数字即可，然后<code>sudo update-grub</code></p>
+</div><div class="admonition info"><p class="admonition-title">提示</p>
+<p>由于我们电脑开机的默认启动项都是Windows，这里只需要<code>sudo kate /etc/default/grub</code>，将文件中的启动数字改成对应的Windows的启动数字即可，然后<code>sudo update-grub</code></p>
+</div>
 <h3 id="小鹤音形挂接rime输入法的安装">小鹤音形挂接Rime输入法的安装</h3>
 <p>首先是安装Rime，一般分为ibus框架和fcitx框架两种选择，以fcitx框架为例，两种方式都是参照<a href="http://t.csdn.cn/pppiJ">这个链接</a>。</p>
 <ol>
@@ -251,6 +261,266 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>查看已经安装的字体<code>fc-list</code>，查看已经安装的中文字体<code>fc-list :lang=zh</code></p>
+<p>小插曲：在安装时，出现“正在设定ttf-mscorefonts-installer“，需要下拉到底部按Tab才能选中它，再按回车。</p>
+<hr>
+<h2 id="常用软件的安装">常用软件的安装</h2>
+<h3 id="安装latex">安装LaTeX</h3>
+<blockquote>
+<p>具体安装过程参考王然的《<a href="https://github.com/OsbertWang/install-latex-guide-zh-cn">一份简短的关于LaTeX 安装的介绍</a>》</p>
+</blockquote>
+<p>这里只阐述如何用镜像安装，镜像的获取方式可以通过清华镜像源。</p>
+<p>将下载的光盘镜像进行装载</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mkdir /mnt/texlive
+</span></span><span class="line"><span class="cl">sudo mount ./texlive2022.iso /mnt/texlive
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接下来执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo /mnt/texlive/install-tl
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>进行安装，在屏幕上应该能看见以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">======================&gt; TeX Live installation procedure &lt;=====================
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">======&gt; Letters/digits in &lt;angle brackets&gt; indicate &lt;=======
+</span></span><span class="line"><span class="cl">======&gt; menu items for actions or customizations &lt;=======
+</span></span><span class="line"><span class="cl">= help&gt; https://tug.org/texlive/doc/install-tl.html &lt;=======
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Detected platform: GNU/Linux on x86_64
+</span></span><span class="line"><span class="cl">。
+</span></span><span class="line"><span class="cl">。
+</span></span><span class="line"><span class="cl">。
+</span></span><span class="line"><span class="cl">&lt;V&gt; set up for portable installation
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Actions:
+</span></span><span class="line"><span class="cl">&lt;I&gt; start installation to hard disk
+</span></span><span class="line"><span class="cl">&lt;P&gt; save installation profile to &#39;texlive.profile&#39; and exit
+</span></span><span class="line"><span class="cl">&lt;Q&gt; quit
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Enter command:
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>键入「I」进行默认安装。安装完毕后，将装载的光盘镜像弹出并删除文件夹</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo umount /mnt/texlive
+</span></span><span class="line"><span class="cl">sudo rm -r /mnt/texlive
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完成后，用户需要设置环境变量，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">kate ~/.bashrc
+</span></span><span class="line"><span class="cl"># 在文末添加
+</span></span><span class="line"><span class="cl">export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+</span></span><span class="line"><span class="cl">export MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH
+</span></span><span class="line"><span class="cl">export INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>保存退出，打开终端执行<code>tex -v</code>，若显示</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">TeX 3.141592653 (TeX Live 2022)
+</span></span><span class="line"><span class="cl">kpathsea version 6.3.4
+</span></span><span class="line"><span class="cl">Copyright 2022 D.E. Knuth.
+</span></span><span class="line"><span class="cl">There is NO warranty. Redistribution of this software is
+</span></span><span class="line"><span class="cl">covered by the terms of both the TeX copyright and
+</span></span><span class="line"><span class="cl">the Lesser GNU General Public License.
+</span></span><span class="line"><span class="cl">For more information about these matters, see the file
+</span></span><span class="line"><span class="cl">named COPYING and the TeX source.
+</span></span><span class="line"><span class="cl">Primary author of TeX: D.E. Knuth.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>则安装成功，有时需要重启才能显示。</p>
+<p>接下来，需要处理字体，在终端中执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo cp /usr/local/texlive/2022/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.config
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将配置文件复制到系统，然后继续执行<code>sudo fc-cache -fsv</code>，刷新字体缓存，如此，TEX Live中的字体才能被正确调用</p>
+<h3 id="卸载tex-live">卸载TEX Live</h3>
+<p>如果是从光盘镜像安装，直接删除文件夹即可，在终端中执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">kpsewhich -var-value TEXMFROOT
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>来查询安装路径，进而通过<code>sudo rm -rf</code>命令进行删除，默认安装的用户直接运行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo rm -rf /usr/local/texlive/2022
+</span></span><span class="line"><span class="cl">rm -rf ~/.texlive2022
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>卸载完成后，再移除之前在<code>~/.bashrc</code>文件中设置的环境变量，接着在z终端执行<code>sudo visudo</code>，在<code>secure_path</code>中删除<code>/usr/local/texlive/2022/bin/x86_64-linux:</code></p>
+<h3 id="安装-zotero">安装 Zotero</h3>
+<p><a href="https://www.zotero.org/download/">官网</a>下载安装包，所下载的版本一般是<code>xxx.tar.bz2</code>文件。</p>
+<p>解压在当前，生成了<code>Zotero_linux-x86_64</code>这个文件夹</p>
+<p>创建 zotero 目录 ，这里选择<code>/opt/</code>这个目录下创建，因为这个目录通常放着浏览器。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mkdir /opt/zotero
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>复制解压文件到<code>/opt/zotero</code>目录下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mv Zotero_linux-x86_64/* /opt/zotero/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更新 zotero 的桌面位置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd /opt/zotero
+</span></span><span class="line"><span class="cl">sudo ./set_launcher_icon
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>创软连接到应用程序桌面</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ln -s /opt/zotero/zotero.desktop ~/.local/applications/zotero.desktop
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="安装-firefox">安装 Firefox</h3>
+<p>安装 KUbuntu 桌面操作系统后，Firefox 默认是集成在系统里的，但是系统所自带的 Firefox ，属于国际版，与中国版所用的服务器不同。</p>
+<p>到<a href="http://www.firefox.com.cn/">中国版 Firefox 官网</a>下载最新版本。</p>
+<p>卸载 KUbuntu 自带的 Firefox <code>sudo apt remove firefox </code></p>
+<p>将 Firefox <code>tar</code>包解压，然后移动到<code>/opt/</code>目录下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd ~/Downloads
+</span></span><span class="line"><span class="cl">tar -jxvf Firefox-latest-x86_64.tar.bz2
+</span></span><span class="line"><span class="cl">sudo mv firefox /opt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后需要将 Firefox 添加为 KUbuntu 桌面软链接</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd /usr/share/applications
+</span></span><span class="line"><span class="cl"># 创建 firefox.desktop 文件
+</span></span><span class="line"><span class="cl">sudo vi firefox.desktop 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><code>firefox.desktop</code> 文件内容示例如下：</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[Desktop Entry]
+</span></span><span class="line"><span class="cl">Name=firefox
+</span></span><span class="line"><span class="cl">Name[zh_CN]=火狐浏览器
+</span></span><span class="line"><span class="cl">Comment=火狐浏览器
+</span></span><span class="line"><span class="cl">Exec=/opt/firefox/firefox
+</span></span><span class="line"><span class="cl">Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+</span></span><span class="line"><span class="cl">Terminal=false
+</span></span><span class="line"><span class="cl">Type=Application
+</span></span><span class="line"><span class="cl">Categories=Application;
+</span></span><span class="line"><span class="cl">Encoding=UTF-8
+</span></span><span class="line"><span class="cl">StartupNotify=true
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>文件保存后，就可以从桌面侧边栏看到 Firefox 图标。</p>
     </div>
 
     

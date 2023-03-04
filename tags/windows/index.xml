@@ -16,14 +16,5 @@
       <description>&lt;p&gt;因为笔者经常使用Markdown和LaTeX两种排版工具，所需要的编辑软件主要是&lt;strong&gt;sublime&lt;/strong&gt;和&lt;em&gt;VS Code&lt;/em&gt;，因为sublime更加的轻量化，对于短文章的编辑十分方便，而且sublime同样支持插件，只不过安装比较麻烦。官网上下载的sublime仍可当作免费使用，但时不时会跳出购买提示，比较恼人，笔者浏览网站，找到破解购买提示的方法，在此与大家分享，希望各位不要用于商业用途。如果失效，也请告知笔者。&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>关于上篇提到的创建批处理文件一键提交博客</title>
-      <link>http://localhost:1313/post/dos-git-hugo/</link>
-      <pubDate>Tue, 12 Jul 2022 14:26:53 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/dos-git-hugo/</guid>
-      <description>&lt;p&gt;前文所提到的解决hugo更新文章的操作命令繁琐的问题，笔者提出写一个批处理文件，一键提交更新。文件内容如下&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>

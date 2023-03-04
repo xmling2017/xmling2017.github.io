@@ -50,7 +50,7 @@
 <meta itemprop="name" content="我的LINUX学习之路——从入门到入土">
 <meta itemprop="description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。"><meta itemprop="datePublished" content="2023-02-08T14:34:09+08:00" />
 <meta itemprop="dateModified" content="2023-02-08T14:34:09+08:00" />
-<meta itemprop="wordCount" content="904">
+<meta itemprop="wordCount" content="1061">
 <meta itemprop="keywords" content="Linux,编程,计算机,系统," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的LINUX学习之路——从入门到入土"/>
 <meta name="twitter:description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。"/>
@@ -136,10 +136,10 @@
         <span class="post-time"> 2023-02-08 </span>
         <div class="post-category">
             <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
-            <a href="/categories/%E6%90%AC%E8%BF%90/"> 搬运 </a>
+            <a href="/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
             </div>
-          <span class="more-meta"> 约 904 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+          <span class="more-meta"> 约 1061 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
         
       </div>
     </header>
@@ -155,6 +155,7 @@
           <ul>
             <li><a href="#下载系统镜像文件并制作启动盘">下载系统镜像文件并制作启动盘</a></li>
             <li><a href="#磁盘分区和格式">磁盘分区和格式</a></li>
+            <li><a href="#更换软件源">更换软件源</a></li>
             <li><a href="#驱动及时间同步问题">驱动及时间同步问题</a></li>
             <li><a href="#小鹤音形挂接rime输入法的安装">小鹤音形挂接Rime输入法的安装</a></li>
             <li><a href="#windows-字体的安装">Windows 字体的安装</a></li>
@@ -177,10 +178,11 @@
 <p>现在的电脑磁盘格式一般是GPT格式，但不排除一些旧电脑是MBR。这里仅介绍GPT格式的安装方式。</p>
 <p>安装之前需要到电脑的BIOS界面，设置EFI优先启动。</p>
 <p>Kubuntu的分区方案一般是，500MB的<code>EFI系统分区</code>，8GB的<code>swap也就是交换空间</code>，40~60GB的根目录，剩下的home空间能留多少留多少，二者都用于Ext4日志文件系统。</p>
+<h3 id="更换软件源">更换软件源</h3>
+<p>安装后默认的软件源是国外的，如果不更换的话，下载软件包会很慢，有些驱动的下载也会报错。</p>
+<p>这里统一换成中科大的镜像软件源。打开<code>/etc/apt/sources.list</code>，将文件内所有的<code>cn.archive.ubuntu.com</code>换成<code>mirrors.ustc.edu.cn</code>。保存后连接网络刷新一下软件源，命令<code>sudo apt update</code></p>
 <h3 id="驱动及时间同步问题">驱动及时间同步问题</h3>
-<p>一般老电脑安装时会遇到，无线网卡驱动缺失的问题，这里给出一种解决方案：先在电脑上查看你的无线驱动的型号，然后根据对应的型号去Github上搜索，<code>git clone</code>下来，一般作者都会给出安装方案。</p>
-<p>因为我的电脑不需要，这里就不多缀述了</p>
-<p>安装无线网卡驱动<code>sudo apt-get install --reinstall bcmwl-kernel-source</code>。</p>
+<p>在软件源更新后，就可以安装无线网卡驱动<code>sudo apt-get install --reinstall bcmwl-kernel-source</code>。</p>
 <p>关于双系统的时间冲突，是因为两系统的时间机制不同，需要将Kubuntu的时间机制改成同Windows一样的就行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -195,7 +197,7 @@
 </span></span><span class="line"><span class="cl">sudo apt install ntpdate
 </span></span><span class="line"><span class="cl">sudo ntpdate time-windows.com
 </span></span><span class="line"><span class="cl">#转换时间机制，并同步BIOS的时间
-</span></span><span class="line"><span class="cl">sudo hwclook --localtime -systohc
+</span></span><span class="line"><span class="cl">sudo hwclock --localtime --systohc
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于我们电脑开机的默认启动项都是Windows，这里只需要<code>sudo kate /etc/default/grub</code>，将文件中的启动数字改成对应的Windows的启动数字即可，然后<code>sudo update-grub</code></p>
@@ -211,16 +213,44 @@
 </li>
 </ol>
 <h3 id="windows-字体的安装">Windows 字体的安装</h3>
-<p>先安装</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install -y font-manager ttf-mscorefonts-installer fontconfig
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#先安装
+</span></span><span class="line"><span class="cl">sudo apt install -y font-manager ttf-mscorefonts-installer fontconfig
+</span></span><span class="line"><span class="cl">#创建目录
+</span></span><span class="line"><span class="cl">sudo mkdir /usr/share/fonts/myfonts
+</span></span><span class="line"><span class="cl">sudo chmod 755 -R /usr/share/fonts/myfonts
+</span></span><span class="line"><span class="cl">#复制准备好的字体
+</span></span><span class="line"><span class="cl">sudo cp ~/* /usr/share/fonts/myfonts/
+</span></span><span class="line"><span class="cl">sudo chmod 755 -R /usr/share/fonts/myfonts
 </span></span></code></pre></td></tr></table>
 </div>
+</div><p>然后转到新建的字体目录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd /usr/share/fonts/myfonts/
+</span></span><span class="line"><span class="cl">sudo mkfontscale
+</span></span><span class="line"><span class="cl">sudo mkfontdir
+</span></span><span class="line"><span class="cl">sudo fc-cache -fv
+</span></span></code></pre></td></tr></table>
 </div>
+</div><p>查看已经安装的字体<code>fc-list</code>，查看已经安装的中文字体<code>fc-list :lang=zh</code></p>
     </div>
 
     
@@ -246,9 +276,9 @@
           <a href="/tags/%E7%B3%BB%E7%BB%9F/">系统</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/my-2022/">
+        <a class="prev" href="/post/ipv6-to-ipv4/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">我的2022——年度总结</span>
+            <span class="prev-text nav-default">IPv6 to IPv4</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         <a class="next" href="/post/latex&#43;wsl&#43;vscode/">

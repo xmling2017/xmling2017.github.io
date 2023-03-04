@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>关于上篇提到的创建批处理文件一键提交博客 - 野山猫 - 東京1939</title>
+  <title>IPv6 to IPv4 - 野山猫 - 東京1939</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="李明勖" /><meta name="description" content="前文所提到的解决hugo更新文章的操作命令繁琐的问题，笔者提出写一个批处理文件，一键提交更新。文件内容如下
+<meta name="author" content="李明勖" /><meta name="description" content="博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。
 " /><meta name="keywords" content="Hugo, theme, even" />
 
 
@@ -27,7 +27,7 @@
 <meta name="generator" content="Hugo 0.101.0 with theme even" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/dos-git-hugo/" />
+<link rel="canonical" href="http://localhost:1313/post/ipv6-to-ipv4/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -40,20 +40,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="关于上篇提到的创建批处理文件一键提交博客" />
-<meta property="og:description" content="前文所提到的解决hugo更新文章的操作命令繁琐的问题，笔者提出写一个批处理文件，一键提交更新。文件内容如下" />
+<meta property="og:title" content="IPv6 to IPv4" />
+<meta property="og:description" content="博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/dos-git-hugo/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-07-12T14:26:53+08:00" />
-<meta property="article:modified_time" content="2022-07-12T14:26:53+08:00" />
+<meta property="og:url" content="http://localhost:1313/post/ipv6-to-ipv4/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-04T11:50:50+08:00" />
+<meta property="article:modified_time" content="2023-03-04T11:50:50+08:00" />
 
-<meta itemprop="name" content="关于上篇提到的创建批处理文件一键提交博客">
-<meta itemprop="description" content="前文所提到的解决hugo更新文章的操作命令繁琐的问题，笔者提出写一个批处理文件，一键提交更新。文件内容如下"><meta itemprop="datePublished" content="2022-07-12T14:26:53+08:00" />
-<meta itemprop="dateModified" content="2022-07-12T14:26:53+08:00" />
-<meta itemprop="wordCount" content="298">
-<meta itemprop="keywords" content="HUGO,Github,博客,批处理," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="关于上篇提到的创建批处理文件一键提交博客"/>
-<meta name="twitter:description" content="前文所提到的解决hugo更新文章的操作命令繁琐的问题，笔者提出写一个批处理文件，一键提交更新。文件内容如下"/>
+<meta itemprop="name" content="IPv6 to IPv4">
+<meta itemprop="description" content="博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。"><meta itemprop="datePublished" content="2023-03-04T11:50:50+08:00" />
+<meta itemprop="dateModified" content="2023-03-04T11:50:50+08:00" />
+<meta itemprop="wordCount" content="694">
+<meta itemprop="keywords" content="DNS 博客," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="IPv6 to IPv4"/>
+<meta name="twitter:description" content="博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -130,16 +130,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">关于上篇提到的创建批处理文件一键提交博客</h1>
+      <h1 class="post-title">IPv6 to IPv4</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2022-07-12 </span>
+        <span class="post-time"> 2023-03-04 </span>
         <div class="post-category">
-            <a href="/categories/%E5%8E%9F%E5%88%9B/"> 原创 </a>
-            <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
+            <a href="/categories/%E8%BD%AC%E8%BD%BD-%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 转载 知识拓展 </a>
             </div>
-          <span class="more-meta"> 约 298 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 694 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         
       </div>
     </header>
@@ -147,62 +146,31 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#解决方法">解决方法</a></li>
+        <li><a href="#恢复默认">恢复默认</a></li>
+        <li><a href="#注意事项">注意事项</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
-  <div class="post-outdated">
-    <div class="warn">
-      <p>【注意】最后更新于 <span class="timeago" datetime="2022-07-12T14:26:53" title="July 12, 2022">July 12, 2022</span>，文中内容可能已过时，请谨慎使用。</p>
-    </div>
-  </div>
     <div class="post-content">
-      <p>前文所提到的解决hugo更新文章的操作命令繁琐的问题，笔者提出写一个批处理文件，一键提交更新。文件内容如下</p>
-<div class="admonition warning"><p class="admonition-title">警告</p>
-<p>首先申明，我的博客根目录是<code>D:\Users\ThankSon\Documents\hugo\MyBlog\</code>，需要修改成你的博客路径</p>
-</div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@ECHO OFF
-</span></span><span class="line"><span class="cl">TITLE 博客部署
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">ECHO &#34;Hello World&#34;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">rd /s /q D:\Users\ThankSon\Documents\hugo\MyBlog\public\post\ 
-</span></span><span class="line"><span class="cl">mkdir D:\Users\ThankSon\Documents\hugo\MyBlog\public\post #这两步主要是解决hugo增删文章不会改变`.\public\post\`内容的问题
-</span></span><span class="line"><span class="cl">cd D:\Users\ThankSon\Documents\hugo\MyBlog
-</span></span><span class="line"><span class="cl">hugo -D #将草稿也一起部署，不需要的可以删去
-</span></span><span class="line"><span class="cl">hugo
-</span></span><span class="line"><span class="cl">cd public
-</span></span><span class="line"><span class="cl">git init
-</span></span><span class="line"><span class="cl">git  add .
-</span></span><span class="line"><span class="cl">git commit -m &#34;修改&#34;
-</span></span><span class="line"><span class="cl">git push
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">PAUSE&gt;NUL
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="admonition info"><p class="admonition-title">提醒一下</p>
-<p>文件创建完毕最好将文件的编码格式由<code>UTF-8</code>改为<code>ANSI</code>，否则命令窗标题会出现乱码，但不会影响输出结果</p>
-</div>
+      <p>博客网页经常打不开的问题（大概不是连接超时，就是连接失败），但是切换成iPv4之后就能正常打开。百度后，猜测是当地iPv6线路质量不佳或运营商的iPv6路由问题导致该服务断续不可达。</p>
+<h2 id="解决方法">解决方法</h2>
+<p>参考<a href="https://www.jianshu.com/p/7226e940088e">这篇博客</a>的方法，大概就是让Windows优先访问iPv4资源（至少可以做到解析时优先使用A记录而非AAAA记录）。</p>
+<p>因为主流的Windows系统（从Windows7之后），都会同时使用iPv4和iPv6，并且优先使用iPv6，当<code>Ping</code>另一个服务器的时候就能看到，优先使用的是iPv6进行通信。</p>
+<p>微软官方推荐是修改注册表来实现，而不是禁用iPv6。因为简单的从网卡属性里去掉iPv4的钩，并不能禁用iPv6.在以下位置添加一个<code>REG_DWORD</code>值：<code>HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\DisabledComponents</code>，并将值设置为20（十六进制）或者32（十进制），<strong>并重启计算机</strong>。</p>
+<h2 id="恢复默认">恢复默认</h2>
+<p>如果想要修改回来，只要将<code>DisabledComponents</code>的值改成0或者删除这个键值，重启就可以了。全程不需要修改网卡属性上的iPv6设置</p>
+<h2 id="注意事项">注意事项</h2>
+<p>应用本方法前，请先确认问题的确是由于iPv6导致的。具体确认的方法是：将无法正常访问的域名放到Ping中，看解析结果是否为iPv6地址。然后在网络适配器选项中，选择「当前连接」，右键「属性」，勾选「暂时取消Internet协议版本6」。然后再尝试刷新网页看看是否恢复。若此时访问正常，则可以尝试上面的方法</p>
+<p>修改注册表中键值，需要重启电脑。（重新禁用启用网卡是无效的）</p>
+<p>本问方法为转载。</p>
     </div>
 
     
@@ -222,19 +190,16 @@
   </div>
 </div><footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/hugo/">HUGO</a>
-          <a href="/tags/github/">Github</a>
-          <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
-          <a href="/tags/%E6%89%B9%E5%A4%84%E7%90%86/">批处理</a>
+          <a href="/tags/dns-%E5%8D%9A%E5%AE%A2/">DNS 博客</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/sublime_done/">
+        <a class="prev" href="/post/my-2022/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">sublime的安装以及破解</span>
+            <span class="prev-text nav-default">我的2022——年度总结</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/create-blog/">
-            <span class="next-text nav-default">基于hugo&#43;github搭建个人博客</span>
+        <a class="next" href="/post/my-journey-of-linux/">
+            <span class="next-text nav-default">我的LINUX学习之路——从入门到入土</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>

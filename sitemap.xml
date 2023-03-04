@@ -17,34 +17,55 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2023-02-08T14:34:09+08:00</lastmod>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2023-02-08T14:34:09+08:00</lastmod>
+    <loc>http://localhost:1313/tags/dns-%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/ipv6-to-ipv4/</loc>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2023-02-08T14:34:09+08:00</lastmod>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2023-02-08T14:34:09+08:00</lastmod>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E6%90%AC%E8%BF%90/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E8%BD%AC%E8%BD%BD-%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/</loc>
+    <lastmod>2023-03-04T11:50:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2023-02-08T14:34:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -79,14 +100,14 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/</loc>
     <lastmod>2023-02-08T14:34:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/</loc>
+    <loc>http://localhost:1313/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2023-02-08T14:34:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -338,14 +359,14 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E8%A1%A5%E5%85%85/</loc>
+    <loc>http://localhost:1313/post/dos-git-hugo/</loc>
     <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/dos-git-hugo/</loc>
+    <loc>http://localhost:1313/tags/%E6%89%B9%E5%A4%84%E7%90%86/</loc>
     <lastmod>2022-07-12T14:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

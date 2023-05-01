@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>作图 on 野山猫 - 東京1939</title>
+    <link>http://localhost:1313/tags/%E4%BD%9C%E5%9B%BE/</link>
+    <description>Recent content in 作图 on 野山猫 - 東京1939</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 May 2023 20:45:06 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E4%BD%9C%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D 作图软件 Blender 的使用指南</title>
+      <link>http://localhost:1313/post/blender/</link>
+      <pubDate>Mon, 01 May 2023 20:45:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/blender/</guid>
+      <description>&lt;p&gt;enable or disable out-of-date content warning for individual post.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

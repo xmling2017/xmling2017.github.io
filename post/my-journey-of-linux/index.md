@@ -14,19 +14,19 @@
 
 现在的电脑磁盘格式一般是GPT格式，但不排除一些旧电脑是MBR。这里仅介绍GPT格式的安装方式。
 
-安装之前需要到电脑的BIOS界面，设置EFI优先启动。
+安装之前需要到电脑的BIOS界面（我的电脑是按F7进入），设置EFI优先启动。
 
-Kubuntu的分区方案一般是，500MB的`EFI系统分区`，8GB的`swap也就是交换空间`，40~60GB的根目录，剩下的home空间能留多少留多少，二者都用于Ext4日志文件系统。
+Kubuntu的分区方案一般是，500MB的`EFI系统分区`，8GB的`swap也就是交换空间`，40~60GB的根目录（**尽可能的放在固态硬盘**），剩下的home空间能留多少留多少，二者都用于Ext4日志文件系统。
 
 ### 更换软件源
 
 安装后默认的软件源是国外的，如果不更换的话，下载软件包会很慢，有些驱动的下载也会报错。
 
-这里统一换成中科大的镜像软件源。打开`/etc/apt/sources.list`，将文件内所有的`cn.archive.ubuntu.com`换成`mirrors.ustc.edu.cn`。保存后连接网络刷新一下软件源，命令`sudo apt update`
+这里统一换成中科大的镜像软件源。打开`/etc/apt/sources.list`，将文件内所有的`cn.archive.ubuntu.com`换成`mirrors.ustc.edu.cn`。保存后连接网络刷新一下软件源，命令`sudo apt update`（这里的操作步骤也可以参考[Linuxmint21.3使用体验分享](https://www.bilibili.com/video/BV1AC411L7ey/)）
 
 ### 驱动及时间同步问题
 
-在软件源更新后，就可以安装无线网卡驱动`sudo apt-get install --reinstall bcmwl-kernel-source`。
+在软件源更新后，就可以安装无线网卡驱动`sudo apt-get install --reinstall bcmwl-kernel-source`（该驱动是根据我的旧电脑的型号决定的）。
 
 关于双系统的时间冲突，是因为两系统的时间机制不同，需要将Kubuntu的时间机制改成同Windows一样的就行。
 ```
@@ -36,7 +36,6 @@ sudo ntpdate time-windows.com
 #转换时间机制，并同步BIOS的时间
 sudo hwclock --localtime --systohc
 ```
-
 
 {{% admonition info "提示" %}}
 由于我们电脑开机的默认启动项都是Windows，这里只需要`sudo kate /etc/default/grub`，将文件中的启动数字改成对应的Windows的启动数字即可，然后`sudo update-grub`
@@ -74,7 +73,9 @@ sudo fc-cache -fv
 
 查看已经安装的字体`fc-list`，查看已经安装的中文字体`fc-list :lang=zh`
 
-小插曲：在安装时，出现“正在设定ttf-mscorefonts-installer“，需要下拉到底部按Tab才能选中它，再按回车。
+{{% admonition info "小插曲" %}}
+在安装时，出现“正在设定ttf-mscorefonts-installer“，需要下拉到底部按Tab才能选中它，再按回车。
+{{% /admonition %}}
 
 ---
 
@@ -116,7 +117,7 @@ Actions:
 
 Enter command:
 ```
-键入「I」进行默认安装。安装完毕后，将装载的光盘镜像弹出并删除文件夹
+键入「I」进行默认安装（小白建议默认安装）。安装完毕后，将装载的光盘镜像弹出并删除文件夹
 ```
 sudo umount /mnt/texlive
 sudo rm -r /mnt/texlive
@@ -175,7 +176,7 @@ sudo mkdir /opt/zotero
 ```
 sudo mv Zotero_linux-x86_64/* /opt/zotero/
 ```
-更新 zotero 的桌面位置
+<span id="jump1">更新 zotero 的桌面位置</span>
 ```
 cd /opt/zotero
 sudo ./set_launcher_icon
@@ -184,6 +185,23 @@ sudo ./set_launcher_icon
 ```
 ln -s /opt/zotero/zotero.desktop ~/.local/applications/zotero.desktop
 ```
+上面可能无法成功，请参考[【包学包会】【Zotero篇】Linux安装、重装和备份，换新电脑再也不用麻烦啦！不同系统的配置文件是通用的，香。](https://zhuanlan.zhihu.com/p/436241013
+)
+
+接着[更新zotero的桌面位置](#jump1)之后，将zotero安装目录下的`zotero.desktop`复制到`/usr/share/applications/`目录下，命令如下：
+```
+sudo cp -r zotero.desktop /usr/share/applications/
+```
+以管理员权限编辑该文件
+```
+cd /usr/share/applications/
+sudo vi zotero.desktop
+```
+<center>
+  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202404282003596.jpg" alt="" width="" height=""></img>
+  <br>
+  <font size="2"><strong>只需要修改红色箭头标出的位置即可</strong></font>
+</center>
 
 ### 安装 Firefox 
 

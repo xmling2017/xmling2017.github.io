@@ -50,7 +50,7 @@
 <meta itemprop="name" content="我的LINUX学习之路——从入门到入土">
 <meta itemprop="description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。"><meta itemprop="datePublished" content="2023-02-08T14:34:09+08:00" />
 <meta itemprop="dateModified" content="2023-02-08T14:34:09+08:00" />
-<meta itemprop="wordCount" content="2183">
+<meta itemprop="wordCount" content="2463">
 <meta itemprop="keywords" content="Linux,编程,计算机,系统," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的LINUX学习之路——从入门到入土"/>
 <meta name="twitter:description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来作写作需要，以下是安装教程。"/>
@@ -138,7 +138,7 @@
             <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
             <a href="/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
             </div>
-          <span class="more-meta"> 约 2183 字 </span>
+          <span class="more-meta"> 约 2463 字 </span>
           <span class="more-meta"> 预计阅读 5 分钟 </span>
         
       </div>
@@ -189,13 +189,13 @@
 <p>下载完镜像文件后，需要用软件制作USB启动盘，这里推荐<a href="https://www.balena.io/etcher">balenaETcher</a>，操作简单，不多逼逼。</p>
 <h3 id="磁盘分区和格式">磁盘分区和格式</h3>
 <p>现在的电脑磁盘格式一般是GPT格式，但不排除一些旧电脑是MBR。这里仅介绍GPT格式的安装方式。</p>
-<p>安装之前需要到电脑的BIOS界面，设置EFI优先启动。</p>
-<p>Kubuntu的分区方案一般是，500MB的<code>EFI系统分区</code>，8GB的<code>swap也就是交换空间</code>，40~60GB的根目录，剩下的home空间能留多少留多少，二者都用于Ext4日志文件系统。</p>
+<p>安装之前需要到电脑的BIOS界面（我的电脑是按F7进入），设置EFI优先启动。</p>
+<p>Kubuntu的分区方案一般是，500MB的<code>EFI系统分区</code>，8GB的<code>swap也就是交换空间</code>，40~60GB的根目录（<strong>尽可能的放在固态硬盘</strong>），剩下的home空间能留多少留多少，二者都用于Ext4日志文件系统。</p>
 <h3 id="更换软件源">更换软件源</h3>
 <p>安装后默认的软件源是国外的，如果不更换的话，下载软件包会很慢，有些驱动的下载也会报错。</p>
-<p>这里统一换成中科大的镜像软件源。打开<code>/etc/apt/sources.list</code>，将文件内所有的<code>cn.archive.ubuntu.com</code>换成<code>mirrors.ustc.edu.cn</code>。保存后连接网络刷新一下软件源，命令<code>sudo apt update</code></p>
+<p>这里统一换成中科大的镜像软件源。打开<code>/etc/apt/sources.list</code>，将文件内所有的<code>cn.archive.ubuntu.com</code>换成<code>mirrors.ustc.edu.cn</code>。保存后连接网络刷新一下软件源，命令<code>sudo apt update</code>（这里的操作步骤也可以参考<a href="https://www.bilibili.com/video/BV1AC411L7ey/">Linuxmint21.3使用体验分享</a>）</p>
 <h3 id="驱动及时间同步问题">驱动及时间同步问题</h3>
-<p>在软件源更新后，就可以安装无线网卡驱动<code>sudo apt-get install --reinstall bcmwl-kernel-source</code>。</p>
+<p>在软件源更新后，就可以安装无线网卡驱动<code>sudo apt-get install --reinstall bcmwl-kernel-source</code>（该驱动是根据我的旧电脑的型号决定的）。</p>
 <p>关于双系统的时间冲突，是因为两系统的时间机制不同，需要将Kubuntu的时间机制改成同Windows一样的就行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -266,7 +266,9 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>查看已经安装的字体<code>fc-list</code>，查看已经安装的中文字体<code>fc-list :lang=zh</code></p>
-<p>小插曲：在安装时，出现“正在设定ttf-mscorefonts-installer“，需要下拉到底部按Tab才能选中它，再按回车。</p>
+<div class="admonition info"><p class="admonition-title">小插曲</p>
+<p>在安装时，出现“正在设定ttf-mscorefonts-installer“，需要下拉到底部按Tab才能选中它，再按回车。</p>
+</div>
 <hr>
 <h2 id="常用软件的安装">常用软件的安装</h2>
 <h3 id="安装latex">安装LaTeX</h3>
@@ -337,7 +339,7 @@
 </span></span><span class="line"><span class="cl">Enter command:
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>键入「I」进行默认安装。安装完毕后，将装载的光盘镜像弹出并删除文件夹</p>
+</div><p>键入「I」进行默认安装（小白建议默认安装）。安装完毕后，将装载的光盘镜像弹出并删除文件夹</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -444,7 +446,7 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mv Zotero_linux-x86_64/* /opt/zotero/
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>更新 zotero 的桌面位置</p>
+</div><p><span id="jump1">更新 zotero 的桌面位置</span></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -464,7 +466,33 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ln -s /opt/zotero/zotero.desktop ~/.local/applications/zotero.desktop
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="安装-firefox">安装 Firefox</h3>
+</div><p>上面可能无法成功，请参考<a href="https://zhuanlan.zhihu.com/p/436241013">【包学包会】【Zotero篇】Linux安装、重装和备份，换新电脑再也不用麻烦啦！不同系统的配置文件是通用的，香。</a></p>
+<p>接着<a href="#jump1">更新zotero的桌面位置</a>之后，将zotero安装目录下的<code>zotero.desktop</code>复制到<code>/usr/share/applications/</code>目录下，命令如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo cp -r zotero.desktop /usr/share/applications/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以管理员权限编辑该文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd /usr/share/applications/
+</span></span><span class="line"><span class="cl">sudo vi zotero.desktop
+</span></span></code></pre></td></tr></table>
+</div>
+</div><center>
+  <img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/202404282003596.jpg" alt="" width="" height=""></img>
+  <br>
+  <font size="2"><strong>只需要修改红色箭头标出的位置即可</strong></font>
+</center>
+<h3 id="安装-firefox">安装 Firefox</h3>
 <p>安装 KUbuntu 桌面操作系统后，Firefox 默认是集成在系统里的，但是系统所自带的 Firefox ，属于国际版，与中国版所用的服务器不同。</p>
 <p>到<a href="http://www.firefox.com.cn/">中国版 Firefox 官网</a>下载最新版本。</p>
 <p>卸载 KUbuntu 自带的 Firefox <code>sudo apt remove firefox </code></p>

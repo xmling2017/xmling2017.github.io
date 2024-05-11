@@ -18,10 +18,10 @@
     
     <item>
       <title>我的LINUX学习之路——从入门到入土</title>
-      <link>http://localhost:1313/post/latex/my-journey-of-linux/</link>
+      <link>http://localhost:1313/post/my-journey-of-linux/</link>
       <pubDate>Wed, 08 Feb 2023 14:34:09 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/latex/my-journey-of-linux/</guid>
+      <guid>http://localhost:1313/post/my-journey-of-linux/</guid>
       <description>&lt;p&gt;给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来满足日常的LaTeX内容输出和一些基础的本文处理，因此本文涉及到的内容十分基础（甚至错误），安装的软件也仅仅是所需要的那几款。&lt;/p&gt;</description>
     </item>
     

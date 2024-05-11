@@ -142,7 +142,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/latex/my-journey-of-linux/</loc>
+    <loc>http://localhost:1313/post/my-journey-of-linux/</loc>
     <lastmod>2024-04-28T14:34:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -163,7 +163,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/latex/latex&#43;wsl&#43;vscode/</loc>
+    <loc>http://localhost:1313/post/latex&#43;wsl&#43;vscode/</loc>
     <lastmod>2023-01-16T14:34:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

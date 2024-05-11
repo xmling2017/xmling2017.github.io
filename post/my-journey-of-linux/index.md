@@ -238,4 +238,8 @@ Categories=Application;
 Encoding=UTF-8
 StartupNotify=true
 ```
-文件保存后，就可以从桌面侧边栏看到 Firefox 图标。
+文件保存后，就可以从桌面侧边栏看到 Firefox 图标 Better lighting for Linux [^bignote]。
+
+### flux
+
+[^bignote]: Here's one with multiple paragraphs and code.

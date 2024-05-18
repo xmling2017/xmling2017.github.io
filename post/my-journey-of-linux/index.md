@@ -238,8 +238,54 @@ Categories=Application;
 Encoding=UTF-8
 StartupNotify=true
 ```
-文件保存后，就可以从桌面侧边栏看到 Firefox 图标 Better lighting for Linux [^bignote]。
+文件保存后，就可以从桌面侧边栏看到 Firefox 图标。
 
-### flux
+### 安装 flux[^1]
 
-[^bignote]: Here's one with multiple paragraphs and code.
+>需要python3
+>
+>安装必要的依赖`sudo apt-get install python3-pexpect python3-distutils python3-xdg gir1.2-ayatanaappindicator3-0.1 gir1.2-gtk-3.0 redshift`
+
+```
+# Download fluxgui
+cd /tmp
+git clone "https://github.com/xflux-gui/fluxgui.git"
+cd fluxgui
+./download-xflux.py
+
+# EITHER install system wide
+sudo ./setup.py install --record installed.txt
+
+# EXCLUSIVE OR, install in your home directory
+#
+# The fluxgui program installs
+# into ~/.local/bin, so be sure to add that to your PATH if installing
+# locally. In particular, autostarting fluxgui in Gnome will not work
+# if the locally installed fluxgui is not on your PATH.
+./setup.py install --user --record installed.txt
+       
+# Run flux
+fluxgui
+```
+进入首选项输入经纬坐标，[查找定位](https://justgetflux.com/map.html)。
+
+将flux小程序设置成开机自启。
+
+### 安装 Anki
+
+>首先安装依赖`sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3`
+
+从[官网](https://apps.ankiweb.net)下载Anki（一般选择「-qt5」，如果`zstd`还没有安装，则`sudo apt install zstd`
+
+接着在命令行中输入
+```
+tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
+cd anki-2XXX-linux-qt6
+sudo ./install.sh
+```
+
+最后你就可以键入`anki`运行即可。其他信息（比如升级等）可参考这篇文章[^2]。
+
+[^1]: Better lighting for Linux.
+
+[^2]：https://docs.ankiweb.net/platform/linux/installing.html

@@ -50,7 +50,7 @@
 <meta itemprop="name" content="我的LINUX学习之路——从入门到入土">
 <meta itemprop="description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来满足日常的LaTeX内容输出和一些基础的本文处理，因此本文涉及到的内容十分基础（甚至错误），安装的软件也仅仅是所需要的那几款。"><meta itemprop="datePublished" content="2023-02-08T14:34:09+08:00" />
 <meta itemprop="dateModified" content="2024-04-28T14:34:09+08:00" />
-<meta itemprop="wordCount" content="2557">
+<meta itemprop="wordCount" content="2889">
 <meta itemprop="keywords" content="Linux,编程,计算机,系统," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的LINUX学习之路——从入门到入土"/>
 <meta name="twitter:description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来满足日常的LaTeX内容输出和一些基础的本文处理，因此本文涉及到的内容十分基础（甚至错误），安装的软件也仅仅是所需要的那几款。"/>
@@ -138,7 +138,7 @@
             <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
             <a href="/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
             </div>
-          <span class="more-meta"> 约 2557 字 </span>
+          <span class="more-meta"> 约 2889 字 </span>
           <span class="more-meta"> 预计阅读 6 分钟 </span>
         
       </div>
@@ -167,7 +167,8 @@
             <li><a href="#卸载tex-live">卸载TEX Live</a></li>
             <li><a href="#安装-zotero">安装 Zotero</a></li>
             <li><a href="#安装-firefox">安装 Firefox</a></li>
-            <li><a href="#flux">flux</a></li>
+            <li><a href="#安装-flux1">安装 flux</a></li>
+            <li><a href="#安装-anki">安装 Anki</a></li>
           </ul>
         </li>
       </ul>
@@ -549,13 +550,83 @@
 </span></span><span class="line"><span class="cl">StartupNotify=true
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>文件保存后，就可以从桌面侧边栏看到 Firefox 图标 Better lighting for Linux <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
-<h3 id="flux">flux</h3>
+</div><p>文件保存后，就可以从桌面侧边栏看到 Firefox 图标。</p>
+<h3 id="安装-flux1">安装 flux<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
+<blockquote>
+<p>需要python3</p>
+<p>安装必要的依赖<code>sudo apt-get install python3-pexpect python3-distutils python3-xdg gir1.2-ayatanaappindicator3-0.1 gir1.2-gtk-3.0 redshift</code></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Download fluxgui
+</span></span><span class="line"><span class="cl">cd /tmp
+</span></span><span class="line"><span class="cl">git clone &#34;https://github.com/xflux-gui/fluxgui.git&#34;
+</span></span><span class="line"><span class="cl">cd fluxgui
+</span></span><span class="line"><span class="cl">./download-xflux.py
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># EITHER install system wide
+</span></span><span class="line"><span class="cl">sudo ./setup.py install --record installed.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># EXCLUSIVE OR, install in your home directory
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl"># The fluxgui program installs
+</span></span><span class="line"><span class="cl"># into ~/.local/bin, so be sure to add that to your PATH if installing
+</span></span><span class="line"><span class="cl"># locally. In particular, autostarting fluxgui in Gnome will not work
+</span></span><span class="line"><span class="cl"># if the locally installed fluxgui is not on your PATH.
+</span></span><span class="line"><span class="cl">./setup.py install --user --record installed.txt
+</span></span><span class="line"><span class="cl">       
+</span></span><span class="line"><span class="cl"># Run flux
+</span></span><span class="line"><span class="cl">fluxgui
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>进入首选项输入经纬坐标，<a href="https://justgetflux.com/map.html">查找定位</a>。</p>
+<p>将flux小程序设置成开机自启。</p>
+<h3 id="安装-anki">安装 Anki</h3>
+<blockquote>
+<p>首先安装依赖<code>sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3</code></p>
+</blockquote>
+<p>从<a href="https://apps.ankiweb.net">官网</a>下载Anki（一般选择「-qt5」，如果<code>zstd</code>还没有安装，则<code>sudo apt install zstd</code></p>
+<p>接着在命令行中输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
+</span></span><span class="line"><span class="cl">cd anki-2XXX-linux-qt6
+</span></span><span class="line"><span class="cl">sudo ./install.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后你就可以键入<code>anki</code>运行即可。其他信息（比如升级等）可参考这篇文章[^2]。</p>
+<p>[^2]：https://docs.ankiweb.net/platform/linux/installing.html</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
-<p>Here&rsquo;s one with multiple paragraphs and code.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Better lighting for Linux.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>

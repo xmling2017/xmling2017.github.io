@@ -284,7 +284,6 @@ cd anki-2XXX-linux-qt6
 sudo ./install.sh
 ```
 
-最后你就可以键入`anki`运行即可。其他信息[^2]（比如升级等）可参考[这篇文章](https://docs.ankiweb.net/platform/linux/installing.html)。
+最后你就可以键入`anki`运行即可。其他信息（比如升级等）可参考[这篇文章](https://docs.ankiweb.net/platform/linux/installing.html)。
 
 [^1]: Better lighting for Linux.
-[^2]：其他信息

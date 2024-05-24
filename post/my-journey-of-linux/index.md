@@ -357,7 +357,7 @@ AppImage是Linux系统中的单文件版，点击即可使用。但是不能像W
 所有的信息都已被打包压缩到了单文件中，通过命令`./XXX.AppImage --appimage-extract`解压，解压后文件夹中的Desktop文件和Png文件分别移动到`/usr/share/applications/`和`~/图片/`中。
 
 <center>
-  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/raw/master/img/202405231751119.png" alt="" width="350" height=""></img>
+  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/master/img/202405231751119.png" alt="" width="350" height=""></img>
   <br>
   <font size="2"><strong>▲ 以PicGo为例</strong></font>
 </center>
@@ -416,7 +416,7 @@ export PATH=$PATH:${JAVA_HOME}/bin
 以Pycharm 2022.1为例，到[官网](https://www.jetbrains.com/pycharm/download/)上下载合适的安装包
 
 <center>
-  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/raw/master/img/202405241210548.png" alt="" width="350" height=""></img>
+  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/master/img/202405241210548.png" alt="" width="350" height=""></img>
   <br>
   <font size="2"><strong>▲ 选择合适的版本下载</strong></font>
 </center>
@@ -430,7 +430,7 @@ sudo mv ./pycharm-XXX /usr/local/pycharm
 下载补丁[^网盘链接1]，将补丁文件夹移动到与Pycharm同一目录下`sudo  mv ja-netfilter /usr/local`，如图：
 
 <center>
-  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/raw/master/img/202405241224982.png" alt="" width="350" height=""></img>
+  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/master/img/202405241224982.png" alt="" width="350" height=""></img>
   <br>
   <font size="2"><strong>▲ 两个文件夹放在同一目录下面</strong></font>
 </center>
@@ -468,7 +468,7 @@ pycharm.sh
 注意启动后不能关闭终端，勾选后点击继续：
 
 <center>
-  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/raw/master/img/202405241238439.png" alt="" width="350" height=""></img>
+  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/master/img/202405241238439.png" alt="" width="350" height=""></img>
   <br>
   <font size="2"><strong>▲ 按顺序勾选</strong></font>
 </center>
@@ -476,7 +476,7 @@ pycharm.sh
 选择不发送
 
 <center>
-  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/raw/master/img/202405241241518.png" alt="" width="350" height=""></img>
+  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/master/img/202405241241518.png" alt="" width="350" height=""></img>
   <br>
   <font size="2"><strong>▲ 选择不发送</strong></font>
 </center>
@@ -484,7 +484,7 @@ pycharm.sh
 选择输入激活码（激活码在文末[^3]）激活：
 
 <center>
-  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/raw/master/img/202405241242262.png" alt="" width="350" height=""></img>
+  <img src="https://raw.githubusercontent.com/xmling2017/lm-graph/master/img/202405241242262.png" alt="" width="350" height=""></img>
   <br>
   <font size="2"><strong>▲ 按顺序填入</strong></font>
 </center>

@@ -427,7 +427,7 @@ tar -xvf pycharm-XXX.tar.gz
 sudo mv ./pycharm-XXX /usr/local/pycharm
 ```
 
-下载补丁[^网盘链接]，将补丁文件夹移动到与Pycharm同一目录下`sudo  mv ja-netfilter /usr/local`，如图：
+下载补丁[^网盘链接1]，将补丁文件夹移动到与Pycharm同一目录下`sudo  mv ja-netfilter /usr/local`，如图：
 
 <center>
   <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241224982.png" alt="" width="350" height=""></img>

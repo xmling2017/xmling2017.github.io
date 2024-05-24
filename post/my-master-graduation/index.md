@@ -25,3 +25,11 @@ Anytype 秘钥：dignity snap seat fruit ability hockey race slogan escape olive
 我的确度过了一段失败的、没有太多意义的三年。但是这三年我也学到了很多，认识了很多。首先我认识到了LaTeX，直到现在我都认为这将是一个改变我终身的工具，其次我正在努力培养我喜欢上阅读，并持续作内容输出的动力，但是这些都不与我的科研相关。
 
 >当你越来越冷漠时，并不是你变得成熟了，真正成熟的人，只会变得越来越温柔。
+
+吃席去了
+
+<center>
+  <img src="https://raw.githubusercontent.com/xmling2017/mypicgo/master/img/202405242059809.jpg" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 关东小磨吃席</strong></font>
+</center>

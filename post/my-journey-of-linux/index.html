@@ -50,7 +50,7 @@
 <meta itemprop="name" content="我的LINUX学习之路——从入门到入土">
 <meta itemprop="description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来满足日常的LaTeX内容输出和一些基础的本文处理，因此本文涉及到的内容十分基础（甚至错误），安装的软件也仅仅是所需要的那几款。"><meta itemprop="datePublished" content="2023-02-08T14:34:09+08:00" />
 <meta itemprop="dateModified" content="2024-04-28T14:34:09+08:00" />
-<meta itemprop="wordCount" content="2826">
+<meta itemprop="wordCount" content="4912">
 <meta itemprop="keywords" content="Linux,编程,计算机,系统," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的LINUX学习之路——从入门到入土"/>
 <meta name="twitter:description" content="给十年前的老式电脑安装的Kubuntu220.04 LST系统，仅用来满足日常的LaTeX内容输出和一些基础的本文处理，因此本文涉及到的内容十分基础（甚至错误），安装的软件也仅仅是所需要的那几款。"/>
@@ -138,8 +138,8 @@
             <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
             <a href="/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
             </div>
-          <span class="more-meta"> 约 2826 字 </span>
-          <span class="more-meta"> 预计阅读 6 分钟 </span>
+          <span class="more-meta"> 约 4912 字 </span>
+          <span class="more-meta"> 预计阅读 10 分钟 </span>
         
       </div>
     </header>
@@ -169,6 +169,13 @@
             <li><a href="#安装-firefox">安装 Firefox</a></li>
             <li><a href="#安装-flux1">安装 flux</a></li>
             <li><a href="#安装-anki">安装 Anki</a></li>
+            <li><a href="#安装-picgo--gitee-配置">安装 PicGo + Gitee 配置</a></li>
+          </ul>
+        </li>
+        <li><a href="#appimage-桌面快捷的建立">AppImage 桌面快捷的建立</a>
+          <ul>
+            <li><a href="#安装-java2">安装 JAVA</a></li>
+            <li><a href="#安装-pycharm-并激活">安装 pycharm 并激活</a></li>
           </ul>
         </li>
       </ul>
@@ -621,11 +628,315 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后你就可以键入<code>anki</code>运行即可。其他信息（比如升级等）可参考<a href="https://docs.ankiweb.net/platform/linux/installing.html">这篇文章</a>。</p>
+<h3 id="安装-picgo--gitee-配置">安装 PicGo + Gitee 配置</h3>
+<p>通过Gitee与PicGo搭建图床。</p>
+<p>PicGo的<a href="https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1">下载地址</a>，下载后缀为「AppImage」文件，点击文件「属性」，授予权限，可作为运行文件运行。</p>
+<p><strong>安装Nodejs</strong>：首先下载<a href="https://nodejs.org/en">nodejs</a>，并解压。</p>
+<p>将文件夹<em>node-vxxx-linux-x64</em>拷贝到<code>/usr/local/lib/nodejs</code>下，并将Nodejs添加到环境变量。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo cp -r node-vxxx-linux-x64 /usr/local/lib/nodejs
+</span></span><span class="line"><span class="cl">echo &#34;export export PATH=/usr/local/lib/nodejs/bin:$PATH&#34; &gt;&gt; ~/.bashrc
+</span></span><span class="line"><span class="cl">echo &#34;export export PATH=/usr/local/lib/nodejs/bin:$PATH&#34; &gt;&gt; ~/.bashrc
+</span></span><span class="line"><span class="cl">. ~/.profile
+</span></span><span class="line"><span class="cl">. ~/.bashrc
+</span></span><span class="line"><span class="cl">// 测试下，是否安装成功，如果成功会打印相应的版本号
+</span></span><span class="line"><span class="cl">node -v
+</span></span><span class="line"><span class="cl">npm -v
+</span></span><span class="line"><span class="cl">// 为了在sudo 执行命令时也能找到相应的指令，可创建一个软连接在/usr/bin中
+</span></span><span class="line"><span class="cl">sudo ln -s /usr/local/lib/nodejs/bin/node /usr/bin/node
+</span></span><span class="line"><span class="cl">sudo ln -s /usr/local/lib/nodejs/bin/npm /usr/bin/npm
+</span></span><span class="line"><span class="cl">sudo ln -s /usr/local/lib/nodejs/bin/npx /usr/bin/npx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="admonition info"><p class="admonition-title">提示</p>
+<p>感觉之后的内容并不需要进行</p>
+</div>
+<p><strong>安装PicGO-core</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo npm install -g cnpm     // 配置cnpm
+</span></span><span class="line"><span class="cl">sudo cnpm install picgo -g   // 安装PicGo-core
+</span></span><span class="line"><span class="cl">picgo install gitee-uploader  // 安装插件picgo-plugin-gitee-uploader
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改「PicGo-core」配置文件：<code>xed ~/.picgo/config.json</code>，文件内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;picBed&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;uploader&#34;: &#34;gitee&#34;,
+</span></span><span class="line"><span class="cl">    &#34;current&#34;: &#34;gitee&#34;,
+</span></span><span class="line"><span class="cl">    &#34;gitee&#34;: {
+</span></span><span class="line"><span class="cl">      &#34;message&#34;: null,
+</span></span><span class="line"><span class="cl">      &#34;owner&#34;: &#34;自己任意填一个就行&#34;,
+</span></span><span class="line"><span class="cl">      &#34;path&#34;: &#34;img&#34;,
+</span></span><span class="line"><span class="cl">      &#34;repo&#34;: &#34;创库路径&#34;,
+</span></span><span class="line"><span class="cl">      &#34;token&#34;: &#34;令牌&#34;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">  },
+</span></span><span class="line"><span class="cl">  &#34;picgoPlugins&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;picgo-plugin-gitee-uploader&#34;: true,
+</span></span><span class="line"><span class="cl">    &#34;picgo-plugin-super-prefix&#34;: true
+</span></span><span class="line"><span class="cl">  },
+</span></span><span class="line"><span class="cl">  &#34;picgo-plugin-super-prefix&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;fileFormat&#34;: &#34;YYYYMMDDHHmmss&#34;
+</span></span><span class="line"><span class="cl">  },
+</span></span><span class="line"><span class="cl">  &#34;picgo-plugin-gitee-uploader&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;lastSync&#34;: &#34;2021-06-26 11:47:30&#34;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="appimage-桌面快捷的建立">AppImage 桌面快捷的建立</h2>
+<p>AppImage是Linux系统中的单文件版，点击即可使用。但是不能像Windows那样直接创建桌面快捷图标。</p>
+<p>首先赋予单文件运行权限<code>sudo chmod +x XXX.AppImage</code></p>
+<p>所有的信息都已被打包压缩到了单文件中，通过命令<code>./XXX.AppImage --appimage-extract</code>解压，解压后文件夹中的Desktop文件和Png文件分别移动到<code>/usr/share/applications/</code>和<code>~/图片/</code>中。</p>
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405231751119.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 以PicGo为例</strong></font>
+</center>
+<h3 id="安装-java2">安装 JAVA<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h3>
+<p><em>OpenJDK</em>和<em>OracleJDK</em>是最主要的两个Java版本，除了Oracle拥有极少的一些额外特性之外，两个之间基本没有什么不同。</p>
+<p>如果不确定是否已经安装了Java，可以通过命令<code>java -version</code>来查询版本号。如果没有安装，则有「OpenJDK 11」和「OpenJDK 8」两个长期支持版本可供选择。</p>
+<p><strong>终端输入</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install openjdk-11-jdk #或者openjdk-8-jdk
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>设置默认版本</strong>：</p>
+<p>如果系统上安装了多个版本，可以输入如下命令<code>java -version</code>，检测哪个版本被设置成了默认值。如果想要修改默认的版本，使用<code>sudo update-alternatives --config java</code>命令，输出结果如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">here are 2 choices for the alternative java (providing /usr/bin/java).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  Selection    Path                                            Priority   Status
+</span></span><span class="line"><span class="cl">------------------------------------------------------------
+</span></span><span class="line"><span class="cl">* 0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      auto mode
+</span></span><span class="line"><span class="cl">  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      manual mode
+</span></span><span class="line"><span class="cl">  2            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java   1081      manual mode
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Press &lt;enter&gt; to keep the current choice[*], or type selection number:
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>所有已经安装的Java版本将会列出，输入你想要设置为默认值的需要，同时按<code>Enter</code>即可。</p>
+<p><strong>设置环境变量</strong>：</p>
+<p>查看、修改并保存环境变量</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim ~/.bashrc
+</span></span><span class="line"><span class="cl">source ~/.bashrc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#将下列四行字符串添加至合适位置
+</span></span><span class="line"><span class="cl">export JAVA_HOME=/usr/lib/jvm/jdkXXX
+</span></span><span class="line"><span class="cl">export JRE_HOME=${JAVA_HOME}/jre
+</span></span><span class="line"><span class="cl">export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+</span></span><span class="line"><span class="cl">export PATH=$PATH:${JAVA_HOME}/bin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更新完系统后，输入<code>jps -l</code>查看命令是否已成功加载。</p>
+<p><strong>卸载Java</strong>：</p>
+<p>就像卸载任意软件包那样，输入<code>sudo apt remove openjdk-11-jdk</code>即可</p>
+<h3 id="安装-pycharm-并激活">安装 pycharm 并激活</h3>
+<p>以Pycharm 2022.1为例，到<a href="https://www.jetbrains.com/pycharm/download/">官网</a>上下载合适的安装包</p>
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241210548.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 选择合适的版本下载</strong></font>
+</center>
+<p>将下载好的pycharm安装包解压至~/下载目录，并将解压后的文件夹移到<code>/usr/local</code>目录下、重命名：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tar -xvf pycharm-XXX.tar.gz
+</span></span><span class="line"><span class="cl">sudo mv ./pycharm-XXX /usr/local/pycharm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>下载补丁[^网盘链接]，将补丁文件夹移动到与Pycharm同一目录下<code>sudo  mv ja-netfilter /usr/local</code>，如图：</p>
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241224982.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 两个文件夹放在同一目录下面</strong></font>
+</center>
+<p><strong>修改配置文件</strong>，进入<code>/usr/local/pycharm/bin</code>目录下，修改文件<code>pycharm64.vmoptions</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 引用补丁，开头必须以 -javaagent: 开头，后面跟着补丁的绝对路径（可根据你实际的位置进行修改）,注意路径一定要填写正确，且不能包含中文，否则会导致 Pycharm 无法启动
+</span></span><span class="line"><span class="cl">-javaagent:/usr/local/ja-netfilter/ja-netfilter.jar
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"># 最新 Pycharm 版本需要添加下面两行，否则会报 key valid
+</span></span><span class="line"><span class="cl">--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+</span></span><span class="line"><span class="cl">--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="admonition warning"><p class="admonition-title">警告</p>
+<p>2018版本及一下不需要在配置文件中输入最后两行字符串，以上的版本输入时切勿添加空格，否则会在激活时报错找不到或无法加载主类A！！！（当然所有的注释也没必要写入）</p>
+</div>
+<p><strong>更改环境变量</strong>，然后<code>source ~/.bashrc</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">export PyCharm_HOME=/usr/local/pycharm
+</span></span><span class="line"><span class="cl">export PATH=${PyCharm_HOME}/bin:$PATH
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="admonition tip"><p class="admonition-title">报错</p>
+<p>若配置完环境变量后，在已经安装Java的情况下使用jps时提示：找不到命令“jps”，可能是环境变量配置顺序影响，可参考<a href="https://blog.csdn.net/qq_67822268/article/details/136889908">该文章</a>解决。</p>
+</div>
+<p><strong>启动并激活Pycharm</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pycharm.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意启动后不能关闭终端，勾选后点击继续：</p>
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241238439.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 按顺序勾选</strong></font>
+</center>
+<p>选择不发送</p>
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241241518.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 选择不发送</strong></font>
+</center>
+<p>选择输入激活码（激活码在文末<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>）激活：</p>
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241242262.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 按顺序填入</strong></font>
+</center>
+<p>至此，Pycharm安装成功！！</p>
+<p><strong>设置Pycharm的桌面快捷方式</strong>：</p>
+<p>安装目录下的<code>./pycharm.sh</code>是Pycharm的启动程序。首先在<code>/usr/share/applications/</code>目录下<em>touch</em>一个新的桌面文件「pycharm.desktop」，以root权限修改该文件，添加文本如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[Desktop Entry]
+</span></span><span class="line"><span class="cl">Type=Application
+</span></span><span class="line"><span class="cl">Name=Pycharm
+</span></span><span class="line"><span class="cl">GenericName=Pycharm3
+</span></span><span class="line"><span class="cl">Comment=Pycharm3:The Python IDE
+</span></span><span class="line"><span class="cl">Exec=&#34;/XXX/bin/pycharm.sh&#34; %f
+</span></span><span class="line"><span class="cl">Icon=/XXX/bin/pycharm.png
+</span></span><span class="line"><span class="cl">Terminal=pycharm
+</span></span><span class="line"><span class="cl">Categories=Pycharm;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>只需要修改<code>Exec</code>和<code>Icon</code>两个属性。</p>
+<p>最后添加可执行权限<code>sudo chmod +x pycharm.desktop</code></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
 <p>Better lighting for Linux.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Java是世界上最流行的编程语言之一，被用来构建各种不同的应用和系统&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>VAE9B0CRYZ-eyJsaWNlbnNlSWQiOiJWQUU5QjBDUllaIiwibGljZW5zZWVOYW1lIjoiZnV6emVzIGFsbHkiLCJhc3NpZ25lZU5hbWUiOiIiLCJhc3NpZ25lZUVtYWlsIjoiIiwibGljZW5zZVJlc3RyaWN0aW9uIjoiIiwiY2hlY2tDb25jdXJyZW50VXNlIjpmYWxzZSwicHJvZHVjdHMiOlt7ImNvZGUiOiJQU0kiLCJmYWxsYmFja0RhdGUiOiIyMDIzLTA3LTAxIiwicGFpZFVwVG8iOiIyMDIzLTA3LTAxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBDIiwiZmFsbGJhY2tEYXRlIjoiMjAyMy0wNy0wMSIsInBhaWRVcFRvIjoiMjAyMy0wNy0wMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUFBDIiwiZmFsbGJhY2tEYXRlIjoiMjAyMy0wNy0wMSIsInBhaWRVcFRvIjoiMjAyMy0wNy0wMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQQ1dNUCIsImZhbGxiYWNrRGF0ZSI6IjIwMjMtMDctMDEiLCJwYWlkVXBUbyI6IjIwMjMtMDctMDEiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFdTIiwiZmFsbGJhY2tEYXRlIjoiMjAyMy0wNy0wMSIsInBhaWRVcFRvIjoiMjAyMy0wNy0wMSIsImV4dGVuZGVkIjp0cnVlfV0sIm1ldGFkYXRhIjoiMDEyMDIyMDcwMVBTQU4wMDAwMDUiLCJoYXNoIjoiVFJJQUw6MTMxNzYyODYxMCIsImdyYWNlUGVyaW9kRGF5cyI6NywiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-YxAJSVk5XIZkkI6vH33zgb/hRmCdqia89zpsVHp2x52PY0XgOOiAlcR3/BVhm0qRYLBYBBHMpPcz0+ZWr2diKy0QexfbtVIVsCRkVaRgl67Tbw9MKb5jVNqpqth2yEoW/gmm2bZC5RS0qiGcPQpjD7AdRo66P78Vb2TrJ5hz055polMwR0hMxm9ECDedLnqKQXyzmcjkucStFNYYHbF0Gnn0I/xrxnVoIDeHMdlsRiBXYPb6TGIVgOIh8ynuGwvP/svLVPCI1dYPYF1V3ndDbOOQskOJaC+7K1/80xVEb3TT7Orb7PJJDX1AiIjg0gsSctPulz3r1xLHIZNcZJcV0A==-MIIETDCCAjSgAwIBAgIBDTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTIwMTAxOTA5MDU1M1oXDTIyMTAyMTA5MDU1M1owHzEdMBsGA1UEAwwUcHJvZDJ5LWZyb20tMjAyMDEwMTkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCUlaUFc1wf+CfY9wzFWEL2euKQ5nswqb57V8QZG7d7RoR6rwYUIXseTOAFq210oMEe++LCjzKDuqwDfsyhgDNTgZBPAaC4vUU2oy+XR+Fq8nBixWIsH668HeOnRK6RRhsr0rJzRB95aZ3EAPzBuQ2qPaNGm17pAX0Rd6MPRgjp75IWwI9eA6aMEdPQEVN7uyOtM5zSsjoj79Lbu1fjShOnQZuJcsV8tqnayeFkNzv2LTOlofU/Tbx502Ro073gGjoeRzNvrynAP03pL486P3KCAyiNPhDs2z8/COMrxRlZW5mfzo0xsK0dQGNH3UoG/9RVwHG4eS8LFpMTR9oetHZBAgMBAAGjgZkwgZYwCQYDVR0TBAIwADAdBgNVHQ4EFgQUJNoRIpb1hUHAk0foMSNM9MCEAv8wSAYDVR0jBEEwP4AUo562SGdCEjZBvW3gubSgUouX8bOhHKQaMBgxFjAUBgNVBAMMDUpldFByb2ZpbGUgQ0GCCQDSbLGDsoN54TATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBaAwDQYJKoZIhvcNAQELBQADggIBABqRoNGxAQct9dQUFK8xqhiZaYPd30TlmCmSAaGJ0eBpvkVeqA2jGYhAQRqFiAlFC63JKvWvRZO1iRuWCEfUMkdqQ9VQPXziE/BlsOIgrL6RlJfuFcEZ8TK3syIfIGQZNCxYhLLUuet2HE6LJYPQ5c0jH4kDooRpcVZ4rBxNwddpctUO2te9UU5/FjhioZQsPvd92qOTsV+8Cyl2fvNhNKD1Uu9ff5AkVIQn4JU23ozdB/R5oUlebwaTE6WZNBs+TA/qPj+5/we9NH71WRB0hqUoLI2AKKyiPw++FtN4Su1vsdDlrAzDj9ILjpjJKA1ImuVcG329/WTYIKysZ1CWK3zATg9BeCUPAV1pQy8ToXOq+RSYen6winZ2OO93eyHv2Iw5kbn1dqfBw1BuTE29V2FJKicJSu8iEOpfoafwJISXmz1wnnWL3V/0NxTulfWsXugOoLfv0ZIBP1xH9kmf22jjQ2JiHhQZP7ZDsreRrOeIQ/c4yR8IQvMLfC0WKQqrHu5ZzXTH4NO3CwGWSlTY74kE91zXB5mwWAx1jig+UXYc2w4RkVhy0//lOmVya/PEepuuTTI4+UJwC7qbVlh5zfhj8oTNUXgN0AOc+Q0/WFPl1aw5VV/VrO8FCoB15lFVlpKaQ1Yh+DVU8ke+rt9Th0BCHXe0uZOEmH0nOnH/0onD&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>

@@ -286,4 +286,230 @@ sudo ./install.sh
 
 最后你就可以键入`anki`运行即可。其他信息（比如升级等）可参考[这篇文章](https://docs.ankiweb.net/platform/linux/installing.html)。
 
+### 安装 PicGo + Gitee 配置
+通过Gitee与PicGo搭建图床。
+
+PicGo的[下载地址](https://github.com/Molunerfinn/PicGo/releases/tag/v2.3.1)，下载后缀为「AppImage」文件，点击文件「属性」，授予权限，可作为运行文件运行。
+
+**安装Nodejs**：首先下载[nodejs](https://nodejs.org/en)，并解压。
+
+将文件夹*node-vxxx-linux-x64*拷贝到`/usr/local/lib/nodejs`下，并将Nodejs添加到环境变量。
+```
+sudo cp -r node-vxxx-linux-x64 /usr/local/lib/nodejs
+echo "export export PATH=/usr/local/lib/nodejs/bin:$PATH" >> ~/.bashrc
+echo "export export PATH=/usr/local/lib/nodejs/bin:$PATH" >> ~/.bashrc
+. ~/.profile
+. ~/.bashrc
+// 测试下，是否安装成功，如果成功会打印相应的版本号
+node -v
+npm -v
+// 为了在sudo 执行命令时也能找到相应的指令，可创建一个软连接在/usr/bin中
+sudo ln -s /usr/local/lib/nodejs/bin/node /usr/bin/node
+sudo ln -s /usr/local/lib/nodejs/bin/npm /usr/bin/npm
+sudo ln -s /usr/local/lib/nodejs/bin/npx /usr/bin/npx
+```
+
+---
+
+{{% admonition info "提示" %}}
+感觉之后的内容并不需要进行
+{{% /admonition %}}
+
+**安装PicGO-core**：
+```
+sudo npm install -g cnpm     // 配置cnpm
+sudo cnpm install picgo -g   // 安装PicGo-core
+picgo install gitee-uploader  // 安装插件picgo-plugin-gitee-uploader
+```
+修改「PicGo-core」配置文件：`xed ~/.picgo/config.json`，文件内容如下：
+```
+{
+  "picBed": {
+    "uploader": "gitee",
+    "current": "gitee",
+    "gitee": {
+      "message": null,
+      "owner": "自己任意填一个就行",
+      "path": "img",
+      "repo": "创库路径",
+      "token": "令牌"
+    }
+  },
+  "picgoPlugins": {
+    "picgo-plugin-gitee-uploader": true,
+    "picgo-plugin-super-prefix": true
+  },
+  "picgo-plugin-super-prefix": {
+    "fileFormat": "YYYYMMDDHHmmss"
+  },
+  "picgo-plugin-gitee-uploader": {
+    "lastSync": "2021-06-26 11:47:30"
+  }
+}
+```
+
+## AppImage 桌面快捷的建立
+
+AppImage是Linux系统中的单文件版，点击即可使用。但是不能像Windows那样直接创建桌面快捷图标。
+
+首先赋予单文件运行权限`sudo chmod +x XXX.AppImage`
+
+所有的信息都已被打包压缩到了单文件中，通过命令`./XXX.AppImage --appimage-extract`解压，解压后文件夹中的Desktop文件和Png文件分别移动到`/usr/share/applications/`和`~/图片/`中。
+
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405231751119.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 以PicGo为例</strong></font>
+</center>
+
+### 安装 JAVA[^2]
+
+*OpenJDK*和*OracleJDK*是最主要的两个Java版本，除了Oracle拥有极少的一些额外特性之外，两个之间基本没有什么不同。
+
+如果不确定是否已经安装了Java，可以通过命令`java -version`来查询版本号。如果没有安装，则有「OpenJDK 11」和「OpenJDK 8」两个长期支持版本可供选择。
+
+**终端输入**：
+```
+sudo apt update
+sudo apt install openjdk-11-jdk #或者openjdk-8-jdk
+```
+
+**设置默认版本**：
+
+如果系统上安装了多个版本，可以输入如下命令`java -version`，检测哪个版本被设置成了默认值。如果想要修改默认的版本，使用`sudo update-alternatives --config java`命令，输出结果如下：
+```
+here are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                            Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      auto mode
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      manual mode
+  2            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java   1081      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number:
+```
+所有已经安装的Java版本将会列出，输入你想要设置为默认值的需要，同时按`Enter`即可。
+
+**设置环境变量**：
+
+查看、修改并保存环境变量
+```
+vim ~/.bashrc
+source ~/.bashrc
+
+#将下列四行字符串添加至合适位置
+export JAVA_HOME=/usr/lib/jvm/jdkXXX
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=$PATH:${JAVA_HOME}/bin
+```
+
+更新完系统后，输入`jps -l`查看命令是否已成功加载。
+
+**卸载Java**：
+
+就像卸载任意软件包那样，输入`sudo apt remove openjdk-11-jdk`即可
+
+
+### 安装 pycharm 并激活
+
+以Pycharm 2022.1为例，到[官网](https://www.jetbrains.com/pycharm/download/)上下载合适的安装包
+
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241210548.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 选择合适的版本下载</strong></font>
+</center>
+
+将下载好的pycharm安装包解压至~/下载目录，并将解压后的文件夹移到`/usr/local`目录下、重命名：
+```
+tar -xvf pycharm-XXX.tar.gz
+sudo mv ./pycharm-XXX /usr/local/pycharm
+```
+
+下载补丁[^网盘链接]，将补丁文件夹移动到与Pycharm同一目录下`sudo  mv ja-netfilter /usr/local`，如图：
+
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241224982.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 两个文件夹放在同一目录下面</strong></font>
+</center>
+
+**修改配置文件**，进入`/usr/local/pycharm/bin`目录下，修改文件`pycharm64.vmoptions`
+```
+# 引用补丁，开头必须以 -javaagent: 开头，后面跟着补丁的绝对路径（可根据你实际的位置进行修改）,注意路径一定要填写正确，且不能包含中文，否则会导致 Pycharm 无法启动
+-javaagent:/usr/local/ja-netfilter/ja-netfilter.jar
+ 
+# 最新 Pycharm 版本需要添加下面两行，否则会报 key valid
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+```
+
+{{% admonition warning "警告" %}}
+2018版本及一下不需要在配置文件中输入最后两行字符串，以上的版本输入时切勿添加空格，否则会在激活时报错找不到或无法加载主类A！！！（当然所有的注释也没必要写入）
+{{% /admonition %}}
+
+**更改环境变量**，然后`source ~/.bashrc`
+```
+export PyCharm_HOME=/usr/local/pycharm
+export PATH=${PyCharm_HOME}/bin:$PATH
+```
+
+{{% admonition tip "报错" %}}
+若配置完环境变量后，在已经安装Java的情况下使用jps时提示：找不到命令“jps”，可能是环境变量配置顺序影响，可参考[该文章](https://blog.csdn.net/qq_67822268/article/details/136889908)解决。
+{{% /admonition %}}
+
+**启动并激活Pycharm**：
+
+```
+pycharm.sh
+```
+
+注意启动后不能关闭终端，勾选后点击继续：
+
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241238439.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 按顺序勾选</strong></font>
+</center>
+
+选择不发送
+
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241241518.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 选择不发送</strong></font>
+</center>
+
+选择输入激活码（激活码在文末[^3]）激活：
+
+<center>
+  <img src="https://gitee.com/thankson_2017/lm-graph/raw/master/img/202405241242262.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 按顺序填入</strong></font>
+</center>
+
+至此，Pycharm安装成功！！
+
+**设置Pycharm的桌面快捷方式**：
+
+安装目录下的`./pycharm.sh`是Pycharm的启动程序。首先在`/usr/share/applications/`目录下*touch*一个新的桌面文件「pycharm.desktop」，以root权限修改该文件，添加文本如下：
+```
+[Desktop Entry]
+Type=Application
+Name=Pycharm
+GenericName=Pycharm3
+Comment=Pycharm3:The Python IDE
+Exec="/XXX/bin/pycharm.sh" %f
+Icon=/XXX/bin/pycharm.png
+Terminal=pycharm
+Categories=Pycharm;
+```
+只需要修改`Exec`和`Icon`两个属性。
+
+最后添加可执行权限`sudo chmod +x pycharm.desktop`
+
 [^1]: Better lighting for Linux.
+[^2]: Java是世界上最流行的编程语言之一，被用来构建各种不同的应用和系统
+[^网盘链接1]: 链接: https://pan.baidu.com/s/1oWe8PMUHIYbYLeZNEsHLMg 提取码: ehjc
+[^3]: VAE9B0CRYZ-eyJsaWNlbnNlSWQiOiJWQUU5QjBDUllaIiwibGljZW5zZWVOYW1lIjoiZnV6emVzIGFsbHkiLCJhc3NpZ25lZU5hbWUiOiIiLCJhc3NpZ25lZUVtYWlsIjoiIiwibGljZW5zZVJlc3RyaWN0aW9uIjoiIiwiY2hlY2tDb25jdXJyZW50VXNlIjpmYWxzZSwicHJvZHVjdHMiOlt7ImNvZGUiOiJQU0kiLCJmYWxsYmFja0RhdGUiOiIyMDIzLTA3LTAxIiwicGFpZFVwVG8iOiIyMDIzLTA3LTAxIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBDIiwiZmFsbGJhY2tEYXRlIjoiMjAyMy0wNy0wMSIsInBhaWRVcFRvIjoiMjAyMy0wNy0wMSIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiUFBDIiwiZmFsbGJhY2tEYXRlIjoiMjAyMy0wNy0wMSIsInBhaWRVcFRvIjoiMjAyMy0wNy0wMSIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQQ1dNUCIsImZhbGxiYWNrRGF0ZSI6IjIwMjMtMDctMDEiLCJwYWlkVXBUbyI6IjIwMjMtMDctMDEiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFdTIiwiZmFsbGJhY2tEYXRlIjoiMjAyMy0wNy0wMSIsInBhaWRVcFRvIjoiMjAyMy0wNy0wMSIsImV4dGVuZGVkIjp0cnVlfV0sIm1ldGFkYXRhIjoiMDEyMDIyMDcwMVBTQU4wMDAwMDUiLCJoYXNoIjoiVFJJQUw6MTMxNzYyODYxMCIsImdyYWNlUGVyaW9kRGF5cyI6NywiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-YxAJSVk5XIZkkI6vH33zgb/hRmCdqia89zpsVHp2x52PY0XgOOiAlcR3/BVhm0qRYLBYBBHMpPcz0+ZWr2diKy0QexfbtVIVsCRkVaRgl67Tbw9MKb5jVNqpqth2yEoW/gmm2bZC5RS0qiGcPQpjD7AdRo66P78Vb2TrJ5hz055polMwR0hMxm9ECDedLnqKQXyzmcjkucStFNYYHbF0Gnn0I/xrxnVoIDeHMdlsRiBXYPb6TGIVgOIh8ynuGwvP/svLVPCI1dYPYF1V3ndDbOOQskOJaC+7K1/80xVEb3TT7Orb7PJJDX1AiIjg0gsSctPulz3r1xLHIZNcZJcV0A==-MIIETDCCAjSgAwIBAgIBDTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTIwMTAxOTA5MDU1M1oXDTIyMTAyMTA5MDU1M1owHzEdMBsGA1UEAwwUcHJvZDJ5LWZyb20tMjAyMDEwMTkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCUlaUFc1wf+CfY9wzFWEL2euKQ5nswqb57V8QZG7d7RoR6rwYUIXseTOAFq210oMEe++LCjzKDuqwDfsyhgDNTgZBPAaC4vUU2oy+XR+Fq8nBixWIsH668HeOnRK6RRhsr0rJzRB95aZ3EAPzBuQ2qPaNGm17pAX0Rd6MPRgjp75IWwI9eA6aMEdPQEVN7uyOtM5zSsjoj79Lbu1fjShOnQZuJcsV8tqnayeFkNzv2LTOlofU/Tbx502Ro073gGjoeRzNvrynAP03pL486P3KCAyiNPhDs2z8/COMrxRlZW5mfzo0xsK0dQGNH3UoG/9RVwHG4eS8LFpMTR9oetHZBAgMBAAGjgZkwgZYwCQYDVR0TBAIwADAdBgNVHQ4EFgQUJNoRIpb1hUHAk0foMSNM9MCEAv8wSAYDVR0jBEEwP4AUo562SGdCEjZBvW3gubSgUouX8bOhHKQaMBgxFjAUBgNVBAMMDUpldFByb2ZpbGUgQ0GCCQDSbLGDsoN54TATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBaAwDQYJKoZIhvcNAQELBQADggIBABqRoNGxAQct9dQUFK8xqhiZaYPd30TlmCmSAaGJ0eBpvkVeqA2jGYhAQRqFiAlFC63JKvWvRZO1iRuWCEfUMkdqQ9VQPXziE/BlsOIgrL6RlJfuFcEZ8TK3syIfIGQZNCxYhLLUuet2HE6LJYPQ5c0jH4kDooRpcVZ4rBxNwddpctUO2te9UU5/FjhioZQsPvd92qOTsV+8Cyl2fvNhNKD1Uu9ff5AkVIQn4JU23ozdB/R5oUlebwaTE6WZNBs+TA/qPj+5/we9NH71WRB0hqUoLI2AKKyiPw++FtN4Su1vsdDlrAzDj9ILjpjJKA1ImuVcG329/WTYIKysZ1CWK3zATg9BeCUPAV1pQy8ToXOq+RSYen6winZ2OO93eyHv2Iw5kbn1dqfBw1BuTE29V2FJKicJSu8iEOpfoafwJISXmz1wnnWL3V/0NxTulfWsXugOoLfv0ZIBP1xH9kmf22jjQ2JiHhQZP7ZDsreRrOeIQ/c4yR8IQvMLfC0WKQqrHu5ZzXTH4NO3CwGWSlTY74kE91zXB5mwWAx1jig+UXYc2w4RkVhy0//lOmVya/PEepuuTTI4+UJwC7qbVlh5zfhj8oTNUXgN0AOc+Q0/WFPl1aw5VV/VrO8FCoB15lFVlpKaQ1Yh+DVU8ke+rt9Th0BCHXe0uZOEmH0nOnH/0onD

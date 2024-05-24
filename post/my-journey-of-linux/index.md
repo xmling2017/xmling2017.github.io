@@ -348,7 +348,7 @@ picgo install gitee-uploader  // 安装插件picgo-plugin-gitee-uploader
 }
 ```
 
-## AppImage 桌面快捷的建立
+### AppImage 桌面快捷的建立
 
 AppImage是Linux系统中的单文件版，点击即可使用。但是不能像Windows那样直接创建桌面快捷图标。
 

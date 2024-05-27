@@ -509,6 +509,16 @@ Categories=Pycharm;
 
 最后添加可执行权限`sudo chmod +x pycharm.desktop`
 
+### Github图床的建立
+
+
+<center>
+  <img src="https://cdn.jsdelivr.net/gh/xmling2017/lm-graph@master/graph/2024/20240524213459.png" alt="" width="350" height=""></img>
+  <br>
+  <font size="2"><strong>▲ 参考上面的填写</strong></font>
+</center>
+
+
 [^1]: Better lighting for Linux.
 [^2]: Java是世界上最流行的编程语言之一，被用来构建各种不同的应用和系统
 [^网盘链接1]: 链接: https://pan.baidu.com/s/1oWe8PMUHIYbYLeZNEsHLMg 提取码: ehjc

@@ -33,3 +33,5 @@ Anytype 秘钥：dignity snap seat fruit ability hockey race slogan escape olive
   <br>
   <font size="2"><strong>▲ 关东小磨吃席</strong></font>
 </center>
+
+我已经想不起来，本科有什么值得留恋的了，同样的，现在的一丝不舍的情绪只不过是激素分泌的正常现象，其实对这个地方并没有太多值得回忆的。我一直是多余的。

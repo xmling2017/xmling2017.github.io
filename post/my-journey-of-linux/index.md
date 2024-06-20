@@ -1,6 +1,6 @@
 给十年前的老式电脑安装的Kubuntu22.04 LST系统，仅用来满足日常的LaTeX内容输出和一些基础的本文处理，因此本文涉及到的内容十分基础（甚至存在错误），安装的软件也仅仅是所需要的那几款。
 <!--more-->
-## 安装Kubuntu220.04LST系统双系统
+## 安装Kubuntu 22.04 LST双系统
 
 这部分内容参考[Windows 和 Ubuntu 双系统的安装和卸载](https://www.bilibili.com/video/BV1554y1n7zv/?share_source=copy_web&vd_source=74f7aedcc2240cf73120aa58afdcb5b7)。
 
@@ -573,9 +573,18 @@ Categories=Pycharm;
 ### Github图床的建立
 
 <center>
-  <img src="https://cdn.jsdelivr.net/gh/xmling2017/lm-graph@master/graph/2024/20240524213459.png" alt="" width="350" height=""></img>
+<table border="0" cellspacing="0" cellpadding="0"><tr>
+  <td><center><img src="https://raw.githubusercontent.com/xmling2017/lm-graph/master/graph/2024/202406180952460.png" border=0 height="250">
   <br>
-  <font size="2"><strong>▲ 参考上面的填写</strong></font>
+  <font size="2">github</font>
+  </center>
+  </td>
+  <td><center><img src="https://pullup.oss-cn-shanghai.aliyuncs.com/img/2024/202406181625753.png" border=0 height="250">
+  <br>
+  <font size="2">阿里云OSS</font>
+  </center>
+  </td>
+</tr></table>
 </center>
 
 [^1]: Better lighting for Linux.

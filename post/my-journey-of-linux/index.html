@@ -50,7 +50,7 @@
 <meta itemprop="name" content="我的LINUX学习之路——从入门到入土">
 <meta itemprop="description" content="给十年前的老式电脑安装的Kubuntu22.04 LST系统，仅用来满足日常的LaTeX内容输出和一些基础的本文处理，因此本文涉及到的内容十分基础（甚至存在错误），安装的软件也仅仅是所需要的那几款。"><meta itemprop="datePublished" content="2023-02-08T14:34:09+08:00" />
 <meta itemprop="dateModified" content="2024-04-28T14:34:09+08:00" />
-<meta itemprop="wordCount" content="4984">
+<meta itemprop="wordCount" content="5002">
 <meta itemprop="keywords" content="Linux,编程,计算机,系统," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的LINUX学习之路——从入门到入土"/>
 <meta name="twitter:description" content="给十年前的老式电脑安装的Kubuntu22.04 LST系统，仅用来满足日常的LaTeX内容输出和一些基础的本文处理，因此本文涉及到的内容十分基础（甚至存在错误），安装的软件也仅仅是所需要的那几款。"/>
@@ -138,7 +138,7 @@
             <a href="/categories/%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95/"> 知识拓展 </a>
             <a href="/categories/%E8%BD%AC%E8%BD%BD/"> 转载 </a>
             </div>
-          <span class="more-meta"> 约 4984 字 </span>
+          <span class="more-meta"> 约 5002 字 </span>
           <span class="more-meta"> 预计阅读 10 分钟 </span>
         
       </div>
@@ -163,7 +163,7 @@
         </li>
         <li><a href="#常用软件的安装">常用软件的安装</a>
           <ul>
-            <li><a href="#安装latex">安装LaTeX</a></li>
+            <li><a href="#linux-下自定义安装-texlive2025">Linux 下自定义安装 Texlive2025</a></li>
             <li><a href="#卸载tex-live">卸载TEX Live</a></li>
             <li><a href="#安装-zotero">安装 Zotero</a></li>
             <li><a href="#安装-firefox">安装 Firefox</a></li>
@@ -278,8 +278,19 @@
 </div>
 <hr>
 <h2 id="常用软件的安装">常用软件的安装</h2>
-<h3 id="安装latex">安装LaTeX</h3>
-<blockquote>
+<h3 id="linux-下自定义安装-texlive2025">Linux 下自定义安装 Texlive2025</h3>
+<h4 id="安装图像化界面必备的perl-tk组件">安装图像化界面必备的perl-tk组件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install perl-tk
+</span></span><span class="line"><span class="cl">sudo apt install tk
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>具体安装过程参考王然的《<a href="https://github.com/OsbertWang/install-latex-guide-zh-cn">一份简短的关于LaTeX 安装的介绍</a>》</p>
 </blockquote>
 <p>这里只阐述如何用镜像安装，镜像的获取方式可以通过清华镜像源。</p>
@@ -287,11 +298,9 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mkdir /mnt/texlive
-</span></span><span class="line"><span class="cl">sudo mount ./texlive2022.iso /mnt/texlive
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mount -o loop  ./texlive2022.iso /mnt
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>接下来执行</p>
@@ -300,64 +309,10 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo /mnt/texlive/install-tl
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo /mnt/texlive/install-tl -gui
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>进行安装，在屏幕上应该能看见以下内容</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">======================&gt; TeX Live installation procedure &lt;=====================
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">======&gt; Letters/digits in &lt;angle brackets&gt; indicate &lt;=======
-</span></span><span class="line"><span class="cl">======&gt; menu items for actions or customizations &lt;=======
-</span></span><span class="line"><span class="cl">= help&gt; https://tug.org/texlive/doc/install-tl.html &lt;=======
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Detected platform: GNU/Linux on x86_64
-</span></span><span class="line"><span class="cl">。
-</span></span><span class="line"><span class="cl">。
-</span></span><span class="line"><span class="cl">。
-</span></span><span class="line"><span class="cl">&lt;V&gt; set up for portable installation
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Actions:
-</span></span><span class="line"><span class="cl">&lt;I&gt; start installation to hard disk
-</span></span><span class="line"><span class="cl">&lt;P&gt; save installation profile to &#39;texlive.profile&#39; and exit
-</span></span><span class="line"><span class="cl">&lt;Q&gt; quit
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Enter command:
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>键入「I」进行默认安装（小白建议默认安装）。安装完毕后，将装载的光盘镜像弹出并删除文件夹</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo umount /mnt/texlive
-</span></span><span class="line"><span class="cl">sudo rm -r /mnt/texlive
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>安装完成后，用户需要设置环境变量，</p>
+</div><h4 id="bashrc-配置文件修改">.bashrc 配置文件修改</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -365,16 +320,78 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kate ~/.bashrc
-</span></span><span class="line"><span class="cl"><span class="c1"># 在文末添加</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/usr/local/texlive/2022/bin/x86_64-linux:<span class="nv">$PATH</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">MANPATH</span><span class="o">=</span>/usr/local/texlive/2022/texmf-dist/doc/man:<span class="nv">$MANPATH</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">INFOPATH</span><span class="o">=</span>/usr/local/texlive/2022/texmf-dist/doc/info:<span class="nv">$INFOPATH</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#TexLive2025环境配置</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">TexMan</span><span class="o">=</span><span class="s2">&#34;/usr/local/texlive/2025/texmf-dist/doc/man&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">TexInfo</span><span class="o">=</span><span class="s2">&#34;/usr/local/texlive/2025/texmf-dist/doc/info&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">TexLive</span><span class="o">=</span><span class="s2">&#34;/usr/local/texlive/2025/bin/x86_64-linux&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">MANPATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$MANPATH</span><span class="s2">:</span><span class="nv">$TexMan</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">INFOPATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$INFOPATH</span><span class="s2">:</span><span class="nv">$TexInfo</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PATH</span><span class="s2">:</span><span class="nv">$TexLive</span><span class="s2">&#34;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>保存退出，打开终端执行</p>
+</div><h4 id="更新字体信息">更新字体信息</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo cp /usr/local/texlive/2025/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.conf
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /etc/fonts/conf.d/
+</span></span><span class="line"><span class="cl">sudo fc-cache -fsv <span class="c1">##(执行失败就再执行此命令一次)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="配置源到清华大学">配置源到清华大学</h4>
+<p>在此之前需要修改环境变量</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vi /etc/sudoers
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Defaults env_reset (将其修改成下面的样子)</li>
+<li>Defaults !env_reset</li>
+</ul>
+<p>然后在<code>.bashrc</code>文件中加入下面这行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">sudo</span><span class="o">=</span><span class="s1">&#39;sudo env PATH=$PATH&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>保存退出后再执行如下命令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/.bashrc
+</span></span><span class="line"><span class="cl">sudo tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更新宏包<code>sudo tlmgr update --self --all</code>，为<strong>Context</strong>更新缓存<code>context --generate</code>。</p>
+<p>进行安装，在屏幕上应该能看见以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo umount /mnt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完成后，用户需要设置环境变量，</p>
+<p>保存退出，打开终端执行</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -413,16 +430,6 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>则安装成功。</p>
-<p>接下来，需要处理字体，在终端中执行</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo cp /usr/local/texlive/2022/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.config
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>将配置文件复制到系统，然后继续执行<code>sudo fc-cache -fsv</code>，刷新字体缓存，如此，TEX Live中的字体才能被正确调用</p>
 <h3 id="卸载tex-live">卸载TEX Live</h3>
 <p>如果是从光盘镜像安装，直接删除文件夹即可，在终端中执行：</p>
 <div class="highlight"><div class="chroma">

@@ -83,7 +83,14 @@ sudo fc-cache -fv
 
 ## 常用软件的安装
 
-### 安装LaTeX
+### Linux 下自定义安装 Texlive2025
+
+#### 安装图像化界面必备的perl-tk组件
+
+```bash
+sudo apt install perl-tk
+sudo apt install tk
+```
 
 >具体安装过程参考王然的《[一份简短的关于LaTeX 安装的介绍](https://github.com/OsbertWang/install-latex-guide-zh-cn)》
 
@@ -92,55 +99,68 @@ sudo fc-cache -fv
 将下载的光盘镜像进行装载
 
 ```bash
-sudo mkdir /mnt/texlive
-sudo mount ./texlive2022.iso /mnt/texlive
+sudo mount -o loop  ./texlive2022.iso /mnt
 ```
 
 接下来执行
 
 ```bash
-sudo /mnt/texlive/install-tl
+sudo /mnt/texlive/install-tl -gui
 ```
+
+#### .bashrc 配置文件修改
+
+```bash
+#TexLive2025环境配置
+export TexMan="/usr/local/texlive/2025/texmf-dist/doc/man"
+export TexInfo="/usr/local/texlive/2025/texmf-dist/doc/info"
+export TexLive="/usr/local/texlive/2025/bin/x86_64-linux"
+export MANPATH="$MANPATH:$TexMan"
+export INFOPATH="$INFOPATH:$TexInfo"
+export PATH="$PATH:$TexLive"
+```
+
+#### 更新字体信息
+
+```bash
+sudo cp /usr/local/texlive/2025/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.conf
+cd /etc/fonts/conf.d/
+sudo fc-cache -fsv ##(执行失败就再执行此命令一次)
+```
+
+#### 配置源到清华大学
+
+在此之前需要修改环境变量
+
+```bash
+sudo vi /etc/sudoers
+```
+
+- Defaults env_reset (将其修改成下面的样子)
+- Defaults !env_reset
+
+然后在`.bashrc`文件中加入下面这行
+
+```bash
+alias sudo='sudo env PATH=$PATH'
+```
+
+保存退出后再执行如下命令。
+
+```bash
+source ~/.bashrc
+sudo tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+```
+
+更新宏包`sudo tlmgr update --self --all`，为**Context**更新缓存`context --generate`。
 
 进行安装，在屏幕上应该能看见以下内容
 
-```text
-======================> TeX Live installation procedure <=====================
-
-======> Letters/digits in <angle brackets> indicate <=======
-======> menu items for actions or customizations <=======
-= help> https://tug.org/texlive/doc/install-tl.html <=======
-
-Detected platform: GNU/Linux on x86_64
-。
-。
-。
-<V> set up for portable installation
-
-Actions:
-<I> start installation to hard disk
-<P> save installation profile to 'texlive.profile' and exit
-<Q> quit
-
-Enter command:
-```
-
-键入「I」进行默认安装（小白建议默认安装）。安装完毕后，将装载的光盘镜像弹出并删除文件夹
-
 ```bash
-sudo umount /mnt/texlive
-sudo rm -r /mnt/texlive
+sudo umount /mnt
 ```
 
 安装完成后，用户需要设置环境变量，
-
-```bash
-kate ~/.bashrc
-# 在文末添加
-export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
-export MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH
-export INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH
-```
 
 保存退出，打开终端执行
 
@@ -165,14 +185,6 @@ Primary author of TeX: D.E. Knuth.
 ```
 
 则安装成功。
-
-接下来，需要处理字体，在终端中执行
-
-```bash
-sudo cp /usr/local/texlive/2022/texmf-var/fonts/conf/texlive-fontconfig.conf /etc/fonts/conf.d/09-texlive.config
-```
-
-将配置文件复制到系统，然后继续执行`sudo fc-cache -fsv`，刷新字体缓存，如此，TEX Live中的字体才能被正确调用
 
 ### 卸载TEX Live
 
